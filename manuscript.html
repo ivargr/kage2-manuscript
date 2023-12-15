@@ -55,8 +55,8 @@
   <meta name="dc.date" content="2023-12-15" />
   <meta name="citation_publication_date" content="2023-12-15" />
   <meta property="article:published_time" content="2023-12-15" />
-  <meta name="dc.modified" content="2023-12-15T15:04:39+00:00" />
-  <meta property="article:modified_time" content="2023-12-15T15:04:39+00:00" />
+  <meta name="dc.modified" content="2023-12-15T15:10:00+00:00" />
+  <meta property="article:modified_time" content="2023-12-15T15:10:00+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -78,9 +78,9 @@
   <meta name="citation_fulltext_html_url" content="https://ivargr.github.io/kage2-manuscript/" />
   <meta name="citation_pdf_url" content="https://ivargr.github.io/kage2-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ivargr.github.io/kage2-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ivargr.github.io/kage2-manuscript/v/ab3a414574dc4e9c25910c4fc98328eb9174c201/" />
-  <meta name="manubot_html_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/ab3a414574dc4e9c25910c4fc98328eb9174c201/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/ab3a414574dc4e9c25910c4fc98328eb9174c201/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ivargr.github.io/kage2-manuscript/v/323d4a76d2ac13a5b76fb729d6774424c56dbc35/" />
+  <meta name="manubot_html_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/323d4a76d2ac13a5b76fb729d6774424c56dbc35/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/323d4a76d2ac13a5b76fb729d6774424c56dbc35/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -151,7 +151,7 @@ Ivar Grytten &lt;ivargry@ifi.uio.no&gt;.</p>
 <h2 id="discussion">Discussion</h2>
 <p>We have presented KAGE2, a genotyper that is able to efficiently and accurately genotype structural variation from short reads by using a pangenome representation of a population. We find it useful to view the problem of calling structural variants based on pangenomes as consisting of of two sub-problems: 1) The problem of extracting useful information from reads (for KAGE and PanGenie this is based on kmers), and 2) the problem of using information about individuals represented by the pangenome to improve prediction (imputation). While PanGenie solves both these problems jointly using a Hidden Markov model, KAGE2 approaches these modularly as two separate problems. This allows us to use external software (GLIMPSE) for the imputation model. A benefit of defining these as two problems is that it allows for the design of a modular solution where existing tools can be used. If another better imputation tool than GLIMPSE would be made available at some point, which is a likely development, the imputation part can be easily exchanged within KAGE2.</p>
 <p>A surprising result is the high level of accuracy achieved by KAGE2 (with use of GLIMPSE imputation) when read coverage is low (0.5-2x) (Figure <a href="#fig:figure1">1</a>). In fact, there is almost no gain in accuracy when read coverage is increased beyond 5x (towards the more commonly used 30x). We speculate that the reason is that most structural variants are difficult to call based on read information alone, and that accurate genotyping is mainly driven by imputation. The fact that accuracy goes drastically down when there are fewer SNPs/indels in the pangenome (Figure <a href="#fig:figure3">3</a>) further shows how important it is to include SNPs/indels in the pangenome.</p>
-<p>While the recently released draft human pangenome only consists of 47 individuals, the Human Pangenome Reference Consortium has announced plans to release a pangenome with 350 individuals in 2024 <span class="citation" data-cites="CqG8RQye">[<a href="#ref-CqG8RQye" role="doc-biblioref">8</a>]</span>. As it is clear pangenomes will only continue to grow in the future, we believe KAGE2 to be an important contribution to the field not only because of its current improvement over state-of-the-art methods, but also because it will be able to computationally scale and exploit the increased information expected from future, larger pangenomes.</p>
+<p>While the recently released draft human pangenome only consists of 47 individuals, the Human Pangenome Reference Consortium has announced plans to release a pangenome with 350 individuals in 2024 <span class="citation" data-cites="CqG8RQye">[<a href="#ref-CqG8RQye" role="doc-biblioref">8</a>]</span>. As it is clear that pangenomes will only continue to grow in the future, we believe KAGE2 to be an important contribution to the field not only because of its current improvement over state-of-the-art methods, but also because it will be able to computationally scale and exploit the increased information expected from future, larger pangenomes.</p>
 <h2 id="methods">Methods</h2>
 <p>We here describe how KAGE2 is implemented and how the experiments were performed. When referring to structural variants in this manuscript, we lean on the commonly used definition of structural variants being variants where either allele contains 50 or more bases.</p>
 <h3 id="kage2-implementation">KAGE2 implementation</h3>

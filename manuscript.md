@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-12-15" />
   <meta name="citation_publication_date" content="2023-12-15" />
   <meta property="article:published_time" content="2023-12-15" />
-  <meta name="dc.modified" content="2023-12-15T15:04:39+00:00" />
-  <meta property="article:modified_time" content="2023-12-15T15:04:39+00:00" />
+  <meta name="dc.modified" content="2023-12-15T15:10:00+00:00" />
+  <meta property="article:modified_time" content="2023-12-15T15:10:00+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://ivargr.github.io/kage2-manuscript/" />
   <meta name="citation_pdf_url" content="https://ivargr.github.io/kage2-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ivargr.github.io/kage2-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ivargr.github.io/kage2-manuscript/v/ab3a414574dc4e9c25910c4fc98328eb9174c201/" />
-  <meta name="manubot_html_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/ab3a414574dc4e9c25910c4fc98328eb9174c201/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/ab3a414574dc4e9c25910c4fc98328eb9174c201/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ivargr.github.io/kage2-manuscript/v/323d4a76d2ac13a5b76fb729d6774424c56dbc35/" />
+  <meta name="manubot_html_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/323d4a76d2ac13a5b76fb729d6774424c56dbc35/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/323d4a76d2ac13a5b76fb729d6774424c56dbc35/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -135,7 +135,7 @@ We have presented KAGE2, a genotyper that is able to efficiently and accurately 
 
 A surprising result is the high level of accuracy achieved by KAGE2 (with use of GLIMPSE imputation) when read coverage is low (0.5-2x) (Figure {@fig:figure1}). In fact, there is almost no gain in accuracy when read coverage is increased  beyond 5x (towards the more commonly used 30x). We speculate that the reason is that most structural variants are difficult to call based on read information alone, and that accurate genotyping is mainly driven by imputation. The fact that accuracy goes drastically down when there are fewer SNPs/indels in the pangenome (Figure {@fig:figure3})  further shows how important it is to include SNPs/indels in the pangenome.
 
-While the recently released draft human pangenome only consists of 47 individuals, the Human Pangenome Reference Consortium has announced plans to release a pangenome with 350 individuals in 2024 [@hprc]. As it is clear pangenomes will only continue to grow in the future, we believe KAGE2 to be an important contribution to the field not only because of its current improvement over state-of-the-art methods, but also because it will be able to computationally scale and exploit the increased information expected from future, larger pangenomes. 
+While the recently released draft human pangenome only consists of 47 individuals, the Human Pangenome Reference Consortium has announced plans to release a pangenome with 350 individuals in 2024 [@hprc]. As it is clear that pangenomes will only continue to grow in the future, we believe KAGE2 to be an important contribution to the field not only because of its current improvement over state-of-the-art methods, but also because it will be able to computationally scale and exploit the increased information expected from future, larger pangenomes. 
 
 ## Methods 
 We here describe how KAGE2 is implemented and how the experiments were performed. When referring to structural variants in this manuscript, we lean on the commonly used definition of structural variants being variants where either allele contains 50 or more bases.

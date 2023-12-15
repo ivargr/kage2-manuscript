@@ -34,12 +34,12 @@ multiallelic
 novo
 NumPy
 PanGenie
-pangenome
+Pangenome
 pangenomes
 pangenomic
 preselected
 quadratically
-Runtime
+runtime
 Sandve
 smrtsv
 SNP
