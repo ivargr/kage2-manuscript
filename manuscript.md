@@ -1,14 +1,15 @@
 ---
-title: Manuscript Title
+title: 'KAGE 2: Fast and accurate genotyping of structural variation using pangenomes'
 keywords:
 - markdown
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-11-28'
+date-meta: '2023-12-15'
 author-meta:
-- John Doe
-- Jane Roe
+- Ivar Grytten
+- Knut Dagestad Rand
+- Geir Kjetil Sandve
 header-includes: |
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -16,38 +17,39 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="Manuscript Title" />
-  <meta name="citation_title" content="Manuscript Title" />
-  <meta property="og:title" content="Manuscript Title" />
-  <meta property="twitter:title" content="Manuscript Title" />
-  <meta name="dc.date" content="2023-11-28" />
-  <meta name="citation_publication_date" content="2023-11-28" />
-  <meta property="article:published_time" content="2023-11-28" />
-  <meta name="dc.modified" content="2023-11-28T18:21:37+00:00" />
-  <meta property="article:modified_time" content="2023-11-28T18:21:37+00:00" />
+  <meta name="dc.title" content="KAGE 2: Fast and accurate genotyping of structural variation using pangenomes" />
+  <meta name="citation_title" content="KAGE 2: Fast and accurate genotyping of structural variation using pangenomes" />
+  <meta property="og:title" content="KAGE 2: Fast and accurate genotyping of structural variation using pangenomes" />
+  <meta property="twitter:title" content="KAGE 2: Fast and accurate genotyping of structural variation using pangenomes" />
+  <meta name="dc.date" content="2023-12-15" />
+  <meta name="citation_publication_date" content="2023-12-15" />
+  <meta property="article:published_time" content="2023-12-15" />
+  <meta name="dc.modified" content="2023-12-15T13:56:31+00:00" />
+  <meta property="article:modified_time" content="2023-12-15T13:56:31+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="John Doe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
-  <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Ivar Grytten" />
+  <meta name="citation_author_institution" content="Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway" />
+  <meta name="citation_author" content="Knut Dagestad Rand" />
+  <meta name="citation_author_institution" content="Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway" />
+  <meta name="citation_author_institution" content="Centre for Bioinformatics, University of Oslo, Oslo, Norway" />
+  <meta name="citation_author" content="Geir Kjetil Sandve" />
+  <meta name="citation_author_institution" content="Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway" />
+  <meta name="citation_author_institution" content="Centre for Bioinformatics, University of Oslo, Oslo, Norway" />
+  <meta name="citation_author_institution" content="UiORealArt Convergence Environment, University of Oslo, Oslo, Norway" />
   <link rel="canonical" href="https://ivargr.github.io/kage2-manuscript/" />
   <meta property="og:url" content="https://ivargr.github.io/kage2-manuscript/" />
   <meta property="twitter:url" content="https://ivargr.github.io/kage2-manuscript/" />
   <meta name="citation_fulltext_html_url" content="https://ivargr.github.io/kage2-manuscript/" />
   <meta name="citation_pdf_url" content="https://ivargr.github.io/kage2-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ivargr.github.io/kage2-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ivargr.github.io/kage2-manuscript/v/48c7d75849f6fa24b2c2d6a529edc028f1b2d029/" />
-  <meta name="manubot_html_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/48c7d75849f6fa24b2c2d6a529edc028f1b2d029/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/48c7d75849f6fa24b2c2d6a529edc028f1b2d029/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ivargr.github.io/kage2-manuscript/v/06ce69092ee7dce8cad3502679ec61c022f80fc5/" />
+  <meta name="manubot_html_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/06ce69092ee7dce8cad3502679ec61c022f80fc5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/06ce69092ee7dce8cad3502679ec61c022f80fc5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,357 +69,173 @@ manubot-clear-requests-cache: false
 
 
 
-<small><em>
-This manuscript
-([permalink](https://ivargr.github.io/kage2-manuscript/v/48c7d75849f6fa24b2c2d6a529edc028f1b2d029/))
-was automatically generated
-from [ivargr/kage2-manuscript@48c7d75](https://github.com/ivargr/kage2-manuscript/tree/48c7d75849f6fa24b2c2d6a529edc028f1b2d029)
-on November 28, 2023.
-</em></small>
 
 
-
-## Authors
-
-
-
-+ **John Doe**
-  <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [johndoe](https://github.com/johndoe)
-    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [johndoe](https://twitter.com/johndoe)
-    · ![Mastodon icon](images/mastodon.svg){.inline_icon width=16 height=16}
-    [\@johndoe@mastodon.social](https://mastodon.social/@johndoe)
-    <br>
-  <small>
-     Department of Something, University of Whatever
-     · Funded by Grant XXXXXXXX
-  </small>
-
-+ **Jane Roe**
-  ^[✉](#correspondence)^<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [janeroe](https://github.com/janeroe)
-    <br>
-  <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
-  </small>
-
+Ivar Grytten^[✉](#correspondence),1,2^, Knut Dagestad Rand^1,2^, Geir Kjetil Sandve^1,2,3^
 
 ::: {#correspondence}
-✉ — Correspondence possible via [GitHub Issues](https://github.com/ivargr/kage2-manuscript/issues)
-or email to
-Jane Roe \<jane.roe@whatever.edu\>.
-
+✉ — Correspondence to
+Ivar Grytten \<ivargry@ifi.uio.no\>.
 
 :::
 
+<small>
+1 — Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway<br>
+2 — Centre for Bioinformatics, University of Oslo, Oslo, Norway<br>
+3 — UiORealArt Convergence Environment, University of Oslo, Oslo, Norway<br>
+</small>
 
-## Abstract {.page_break_before}
 
+## Abstract
 
+Structural variation is known to play an important and often overlooked role in regulating disease and traits, but accurately detecting structural variants from sequencing data has traditionally been difficult. However, recent improvements in high-quality genome assembly along with methodological advancements in *pangenome* creation have opened up the landscape for methods that use such pangenomes for structural variant calling and genotyping. We here present KAGE2, which accurately and efficiently genotypes structural variation by exploiting the availability of pangenomes that represent known variation in a population. Through comprehensive benchmarking, we highlight limitations of existing methodology and show that KAGE2 is more accurate and considerably faster than existing methods.
 
+## Introduction
+While the study of genetic variation traditionally has been focused on SNPs and short indels, we now know that structural variation plays a much more important role than previously assumed [@sv_yeast; @sv_medical; @tandem_repeats]. Thus, being able to cost-effectively detect structural variation in a genomic sample is of great importance. Traditionally, detecting structural variation has been done by mapping short-read sequences to a reference genome, which yields much lower accuracy than equivalent methods for SNPs/short indels, since reads originating from the structural variants are less likely to map to the reference [@svcalling_review]. A solution has been to use longer reads [@long_read_sequencing_review], and while there exist several tools [@sniffles; @smrtsv] that are able to accurately detect structural variation based on long reads, it comes with a markedly increased sequencing cost.
 
-This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
-Use this template as a starting point for your manuscript.
+A more promising “hybrid” approach, leveraging both the accuracy of long-read methods and the cost-effectiveness of short-read sequencing, has recently gained traction [@hprc, @pangenie]. The idea of this hybrid approach is to create a high-quality database (referred to as a *pangenome*) of some select genomes and their variants using accurate long-read sequencing. With such a pangenome [@pangenome_review], variants in an individual of interest can be characterized by *genotyping* variants in the pangenome, i.e. for every known variant in the pangenome, estimating the individual’s genotype for that variant. This can be done with short-read sequencing by comparing sequenced reads directly to the pangenome (e.g. through graph-based mapping-techniques [@vg; @giraffe]). This approach allows for discovering any variation in a sequenced individual that is already represented in the pangenome, and circumvents the issue of mapping short reads to a linear reference genome, which also is known to lead to reference bias [@reference_bias]. Another benefit of this approach is that known population structure encoded in the pangenome can be used to improve accuracy, e.g. by “imputing” variants that are difficult to call using information from other variants [@kage; @pangenie]. 
 
-The rest of this document is a full list of formatting elements/features supported by Manubot.
-Compare the input (`.md` files in the `/content` directory) to the output you see below.
+This genotyping approach has previously shown promising results for SNPs and short indels [@kage; @graphtyper; @pangenie; @malva], but its use has been limited for structural variation, since few good pangenomes with structural variation have been available. However, the recent release of a high-quality human pangenome containing 47 haplotype-resolved individuals [@hprc] now make this approach much more relevant for structural variant genotyping of humans (and there are also similar ongoing projects for other species [cite tomato?]). As part of this human pangenome release, the authors showed that the genotyper PanGenie [@pangenie] is able to genotype structural variation of a new individual (an individual not present in the pangenome) with fairly high accuracy. A problem with PanGenie is, however, that its runtime scales quadratically with pangenome size (number of individuals in the pangenome). This is a problem as pangenomes are expected to grow significantly in size in the years to come.
 
-## Basic formatting
+We here present KAGE2, which expands recent methodology for SNP/indel genotyping to   allow pangenome-based genotyping of structural variants. We here show that KAGE2 is more accurate than existing methods for genotyping structural variation in addition to being considerably faster.
 
-**Bold** __text__
+## Results
+We present KAGE 2, which extends  our previously published genotyper KAGE to enable genotyping of  structural variants. KAGE2 genotypes structural variants through a strategy similar to SNP/indel genotyping, by exploiting a pangenome that represents known structural variation in a population. The variants present in the population are represented by kmers, allowing KAGE2 to infer structural variant genotypes by comparing these variant kmers to kmers present in the reads for the individual that is being genotyped. We refer to [@kage] for an overview of the original KAGE genotyper. The main methodological changes from KAGE to KAGE2 are how kmers are selected from the pangenome in order to represent structural variants (see Methods). KAGE2 also implements direct support for imputation using GLIMPSE [@glimpse] (see Methods).
 
-[Semi-bold text]{.semibold}
+In the following, we present various benchmarks that compare the accuracy of KAGE2 against the existing genotypers PanGenie and Bayestyper, using the recently published high quality *draft human pangenome* [@hprc] We do this using a leave-one-out setup where an individual is removed from the pangenome and genotyped using the remaining pangenome (see Methods).
 
-[Centered text]{.center}
+#### KAGE is faster and more accurate than existing methods
+We run KAGE2 and previously proposed genotypers with various read coverages (average number of reads per base pair), and compute accuracy as F1 score using Truvari [@truvari]. As can bee seen from Figure {@fig:figure1}a, KAGE2 outperforms other methods for all read coverages. We also ran the same experiments with 5 other randomly picked individuals, which all showed similar results (see Supplementary Figure 1).
 
-[Right-aligned text]{.right}
+Figure {@fig:figure1}b shows the runtime of the genotypers as a function of pangenome size (number of individuals in the pangenome, see Methods). KAGE is considerably faster than competing methods, and its runtime is independent of pangenome size. Note that Bayestyper’s runtime is the same for all pangenomes, which is because it does not use any information from the individuals in the pangenome. Since PanGenie uses a Hidden Markov model with possible haplotype path as states, its runtime increases drastically with the number of individuals. The time spent for creating indexes for PanGenie and KAGE is not included in the runtime (but listed in the Supplementary Material).
 
-*Italic* _text_
 
-Combined *italics and __bold__*
+![a) Accuracy on genotyping structural variants when removing a random individual from the pangenome and genotyping that individual. *Baseline (guessing)* is a naive baseline genotyper that does not use any reads, but instead “guesses” the genotype just by using population priors (Methods). b) Runtime as a function of pangenome size (number of individuals in the pangenome) when running on chromosome 1 of the Draft Human Pangenome [@hprc]
+](https://raw.githubusercontent.com/bioinf-benchmarking/sv-genotyping/master/plots/figure1.png){#fig:figure1 width="90%"}
 
-~~Strikethrough~~
 
-1. Ordered list item
-2. Ordered list item
-    a. Sub-item
-    b. Sub-item
-        i. Sub-sub-item
-3. Ordered list item
-    a. Sub-item
+#### KAGE performs well on different variant types/regions
+To investigate the observed performance in more detail, Figure {@fig:figure2} shows the genotyping accuracy stratified by type of genomic regions and type of variant (using regions defined by GIAB [@giab]). KAGE is generally the best-performing genotyper across all variant-types and regions.
 
-- List item
-- List item
-- List item
+![Accuracy for deletions and insertions in various types of genomic regions.](https://raw.githubusercontent.com/bioinf-benchmarking/sv-genotyping/master/plots/figure2.png){#fig:figure2  width="100%"}
 
-subscript: H~2~O is a liquid
+#### Pangenome size matters
+A limitation of pangenomic genotypers as opposed to de novo variant callers is that the genotypers can only detect a variant if it is also present in the pangenome used for genotyping. Thus, larger pangenomes (created from more individuals) opens for higher recall, though with a risk of lower precision. Figure {@fig:figure3} shows accuracy as a function of the number of individuals in the pangenome. As can be seen, accuracy increases as more individuals are added, although with a diminishing return for every additional individual. This indicates that it is likely worth the effort to invest in creating even larger pangenomes, and that having methods like KAGE that have runtime independent of pangenome size is important. Interestingly, the baseline genotyper performs worse when the pangenome grows, which is likely because the inclusion of more rare variants increases the number of false positive calls.
 
-superscript: 2^10^ is 1024.
+![Accuracy as a function of pangenome size (number of individuals in the pangenome) on all structural variants.](https://raw.githubusercontent.com/bioinf-benchmarking/sv-genotyping/master/plots/figure3.png){#fig:figure3 width="100%"}
 
-[unicode superscripts](https://www.google.com/search?q=superscript+generator)⁰¹²³⁴⁵⁶⁷⁸⁹
 
-[unicode subscripts](https://www.google.com/search?q=superscript+generator)₀₁₂₃₄₅₆₇₈₉
+#### SNPs/indels help calling structural variants
+We also investigate whether the genotyping of structural variants is improved by including more SNPs and indels in the pangenome. We do this by creating a variety of pangenomes, where we for each pangenome filter away SNPs/indels that have allele frequency lower than a given threshold. As can be seen from Figure {@fig:figure4}, both PanGenie and KAGE benefit from more SNPs/indels.
 
-A long paragraph of text.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+![Accuracy when SNPs/indels have been filtered using various allele frequency cutoffs. All SNPs/indels with allele frequency lower than the cutoff have been removed, meaning that the number of SNPs/indels decreases as the cutoff increases. The baseline genotyper has constant accuracy, since it only genotypes variants using population priors (which for structural variants do not change when SNPs/indels are removed).](https://raw.githubusercontent.com/bioinf-benchmarking/sv-genotyping/master/plots/figure4.png){#fig:figure4 width="80%"}
 
-Putting each sentence on its own line has numerous benefits with regard to [editing](https://asciidoctor.org/docs/asciidoc-recommended-practices/#one-sentence-per-line) and [version control](https://rhodesmill.org/brandon/2012/one-sentence-per-line/).
+## Discussion
+We have presented KAGE2, a genotyper that is able to efficiently and accurately genotype structural variation from short reads by using a pangenome representation of a population. We find it useful to view the problem of calling structural variants based on pangenomes as consisting of of two sub-problems: 1) The problem of extracting useful information from reads (for KAGE and PanGenie this is based on kmers), and 2) the problem of using information about individuals represented by the pangenome to improve prediction (imputation). While PanGenie solves both these problems jointly using a Hidden Markov model, KAGE2 approaches these modularly as two separate problems. This allows us to use external software (GLIMPSE) for the imputation model. A benefit of defining these as two problems is that it allows for the design of a modular solution where existing tools can be used. If another better imputation tool than GLIMPSE would be made available at some point, which is a likely development, the imputation part can be easily exchanged within KAGE2. 
 
-Line break without starting a new paragraph by putting  
-two spaces at end of line.
+A surprising result is the high level of accuracy achieved by KAGE2 (with use of GLIMPSE imputation) when read coverage is low (0.5-2x) (Figure {@fig:figure1}). In fact, there is almost no gain in accuracy when read coverage is increased  beyond 5x (towards the more commonly used 30x). We speculate that the reason is that most structural variants are difficult to call based on read information alone, and that accurate genotyping is mainly driven by imputation. The fact that accuracy goes drastically down when there are fewer SNPs/indels in the pangenome (Figure {@fig:figure3})  further shows how important it is to include SNPs/indels in the pangenome.
 
-## Document organization
+While the recently released draft human pangenome only consists of 47 individuals, the Human Pangenome Reference Consortium has announced plans to release a pangenome with 350 individuals in 2024 [@hprc]. As it is clear pangenomes will only continue to grow in the future, we believe KAGE2 to be an important contribution to the field not only because of its current improvement over state-of-the-art methods, but also because it will be able to computationally scale and exploit the increased information expected from future, larger pangenomes. 
 
-Document section headings:
+## Methods 
+We here describe how KAGE2 is implemented and how the experiments were performed. When referring to structural variants in this manuscript, we lean onuse the commonly used definition of structural variants being variants where either allele contains 50 or more bases.
 
-# Heading 1
+### KAGE2 implementation
+The main difference betweenfrom KAGE andto KAGE 2 is that KAGE 2 employsimplements an improvedbetter strategyway of for picking kmers tofor representing variants, which is needed sincenecessary for structural variants that are often multiallelic and containhave repetitive sequences. Through experimentation, we found it important to select kmers that have low frequency locally (within the variant) as well as globally (in the pangenome). Kmers are chosen by looking at multiallelic variant sites, so all overlapping variants in a region are grouped and looked at together as one multiallelic variant. For each such multiallelic site, we first find all kmers covering all alleles of this multiallelic site. Among these kmers, the aim is to find a kmer to represent each allele. For each kmer candidate we assign a score that is based on how often this kmer is observed in the pangenome globally as well as how often it is observed locally at the multiallelic variant. We minimize the global score, but found it more important to minimize the local score, as it is important to be able to separate the alleles of a multiallelic variant when genotyping. Thus, we weigh the local score twice as much as the global score, and for each allele pick the kmer with lowest score. For some variant sites, several alleles will end up being represented by the same kmer (because no unique kmers can be found). In such cases, KAGE may still be able to make a correct genotype call because the expected frequency of each kmer in input reads may be different depending on  which combination of alleles the individual has. Selecting and scoring kmers is done efficiently using BioNumPy [@bionumpy] and NumPy [@numpy].
 
-## Heading 2
+### Using GLIMPSE for imputation
+A central part of how KAGE performs genotyping is the use of estimated genotype likelihoods between preselected pairs of variants to guide genotyping, by using information from the population about how genotypes of pairs of variants are “correlated”. This is a simple form of imputation [@imputation_review], and while the original KAGE genotyper has a fairly basic and efficient way of doing this (using only a single variant to impute another variant), which worked well for SNPs and indels, we have found this to be less successful for structural variation. Instead, we have found GLIMPSE [@glimpse] to work well with KAGE and thus rely on GLIMPSE for imputation. Whenever we are referring to KAGE in the results, we refer to KAGE with imputation done by GLIMPSE. KAGE2 also optimally still supports genotyping using the previous builtin imputation model. 
 
-### Heading 3
 
-#### Heading 4
+### Benchmarking
+All experiments presented are run using the human draft pangenome [@hprc]. This pangenome is built from whole-genome assembly of 47 individuals and is expected to represent most of these individuals SNPs, indels and structural variants with high accuracy. We perform experiments by removing one individual from the pangenome and genotype that individual using the remaining pangenome, mimicking a real-case scenario where we have an existing pangenome and genotype a new sample that is not present in the pangenome using short-read sequencing. This way, we can compare the genotypes we found to the original genotypes to get an estimate of genotyping accuracy.
 
-##### Heading 5
+In the experiments presented in this manuscript, we only run the methods on one human chromosome with simulated reads. This allows us to explore several parameters efficiently. In the Supplementary material, we run a subset of the experiments on the whole human genome with reads from the 1000 Genomes Project [@thousand_genomes], showing that results on the whole genome with non-simulated reads give similar results.  
 
-###### Heading 6
+We chose to mainly compare KAGE2 to PanGenie, as PanGenie has previously shown that it is both faster and more accurate when genotyping structural variants than other methods, and from our experience, PanGenie is the only existing available method that is able to genotype structural variants using pangenomes in reasonable time with good accuracy. We also include BayesTyper [@bayestyper] as a reference, which is a method that works somewhat similarly to KAGE and PanGenie by representing variants with kmers and counting those kmers in the reads.
 
-### A heading centered on its own printed page{.center .page_center}
+We have implemented an extensive pipeline for benchmarking structural variant genotyping accuracy that allows exploring various parameters and how they affect accuracy, such as read coverage, allele frequency, number of individuals in the pangenome, read error rate, etc. Our pipeline can be found at <https://github.com/bioinf-benchmarking/sv-genotyping> and experiments with various parameter configurations can easily be configured.
 
-<!-- an arbitrary comment. visible in input, but not visible in output. -->
 
-Horizontal rule:
+### Measuring genotype accuracy
+Measuring the accuracy of structural variant genotyping is less trivial than with SNPs and short indels, as identical or near-identical structural variants can be represented in multiple ways. In previous benchmarks [@hprc; @pangenie], accuracy has been defined using *weighted genotype concordance*, which briefly explained is an average of the precision (correctly assigned genotypes divided by the total number of variants assigned that genotype by the genotyper) for each of the three possible genotypes (0/0, 0/1 and 1/1) (see [@pangenie] for formal definition). We find two problems with this measure:
 
----
+Equal weight is put on all genotypes (0/0, 0/1 and 1/1). Since the number of variants in each group is skewed (there are many more 0/0 than 0/1 and 1/1), you can easily boost this measure by assigning 0/0 to most of the variants and only calling those you are very certain on as 0/1 or 1/1. That way you can get a very high precision on 0/1 and 1/1 without sacrificing much precision on 0/0, which means that the weighted average can get high although overall accuracy is low (many false 0/0). We believe it is better to use the more standard way of measuring accuracy by using recall and precision, as is also recommended by others [@truvari, @best_practices_benchmarking].
 
-`Heading 1`'s are recommended to be reserved for the title of the manuscript.
+The weighted genotype concordance requires exact genotype match to mark a genotype call as correct. In practice, most structural variants in the draft human pangenome are multiallelic (sometimes with as many alleles as the number of haplotypes in the pangenome), and many alleles are almost identical within a multiallelic variant. Thus, requiring the genotyper to find the exact allele among many almost identical alleles is in our opinion too strict, and in practical settings what we are interested in is whether we are calling an allele that is similar enough (within some threshold) to the truth. The tool Truvari implements a way to measure accuracy with some slack on allele matching, and we refer to [@truvari] for a further discussion on this. We have thus chosen to use Truvari when measuring genotyping accuracy instead of the matching criterias used in [@hprc] and [@pangenie].
 
-`Heading 2`'s are recommended for broad sections such as *Abstract*, *Methods*, *Conclusion*, etc.
+While previous benchmarks [@hprc; @pangenie] ignore genotype errors that are due to variants of the individual being genotyped not being present in the pangenome, we instead count these as errors (false negatives). This is because we want the experiment to be as close to a real-world scenario as possible, where we genotype an individual and are interested in how many variants we find (recall) and the accuracy of those calls (precision). A pangenome that lacks variants present in the individual will lead to lower recall as fewer variants can be detected, and we want to capture this.
 
-`Heading 3`'s and `Heading 4`'s are recommended for sub-sections.
 
-## Links
+### Baseline genotyper
+In the experiments we have included a “baseline” genotyper. This genotyper is implemented by running GLIMPSE with uniform genotype likelihoods as input, meaning that they are a result of GLIMPSE only using population priors to do genotyping and no information from sequenced reads.
 
-Bare URL link: <https://manubot.org>
 
-[Long link with lots of words and stuff and junk and bleep and blah and stuff and other stuff and more stuff yeah](https://manubot.org)
+## Code availability
+KAGE2 is available at <https://github.com/kage-genotyper/kage/>. Instructions for how to reproduce the experiments provided here are available at <https://github.com/bioinf-benchmarking/sv-genotyping/kage-experiments.md>
 
-[Link with text](https://manubot.org)
 
-[Link with hover text](https://manubot.org "Manubot Homepage")
 
-[Link by reference][manubot homepage]
 
-[Manubot Homepage]: https://manubot.org
 
-## Citations
+<div style="page-break-after: always;"></div>
 
-Citation by DOI [@doi:10.7554/eLife.32822].
+# Supplementary Material
 
-Citation by PubMed Central ID [@pmc:PMC6103790].
 
-Citation by PubMed ID [@pubmed:30718888].
+### Supplementary Figure 1
+Figure {@fig:figure2} rerun with 5 random individuals (random seed in benchmarking pipeline ranging from 1-5).
 
-Citation by Wikidata ID [@wikidata:Q56458321].
 
-Citation by ISBN [@isbn:9780262517638].
+![](https://raw.githubusercontent.com/bioinf-benchmarking/sv-genotyping/master/plots/supplementary_figure1.png){#fig:supplementary_figure1   width="100%"}\
 
-Citation by URL [@{https://greenelab.github.io/meta-review/}].
 
-Citation by alias [@deep-review].
+### Supplementary Figure 2
+Figure 2 rerun with reads from 1000 Genomes Project on the whole human genome for one individual. 
 
-Multiple citations can be put inside the same set of brackets [@doi:10.7554/eLife.32822; @deep-review; @isbn:9780262517638].
-Manubot plugins provide easier, more convenient visualization of and navigation between citations [@doi:10.1371/journal.pcbi.1007128; @pubmed:30718888; @pmc:PMC6103790; @deep-review].
 
-Citation tags (i.e. aliases) can be defined in their own paragraphs using Markdown's reference link syntax:
 
-[@deep-review]: doi:10.1098/rsif.2017.0387
+![](https://raw.githubusercontent.com/bioinf-benchmarking/sv-genotyping/master/plots/supplementary_figure2.png){#fig:supplementary_figure2   width="100%"}\
 
-## Referencing figures, tables, equations
 
-Figure @fig:square-image
+### Indexing time 
+The following table shows the time spent creating indexes for the whole Draft Human Pangenome. 
 
-Figure @fig:wide-image
+|          | Time spent (h:m:s) |
+|----------|--------------------|
+| KAGE     | 23:22:48           |
+| PanGenie | 2:17:49            |
 
-Figure @fig:tall-image
 
-Figure @fig:vector-image
-
-Table @tbl:bowling-scores
-
-Equation @eq:regular-equation
-
-Equation @eq:long-equation
-
-## Quotes and code
-
-> Quoted text
-
-> Quoted block of text
->
-> Two roads diverged in a wood, and I—  
-> I took the one less traveled by,  
-> And that has made all the difference.
-
-Code `in the middle` of normal text, aka `inline code`.
-
-Code block with Python syntax highlighting:
-
-```python
-from manubot.cite.doi import expand_short_doi
-
-def test_expand_short_doi():
-    doi = expand_short_doi("10/c3bp")
-    # a string too long to fit within page:
-    assert doi == "10.25313/2524-2695-2018-3-vliyanie-enhansera-copia-i-insulyatora-gypsy-na-sintez-ernk-modifikatsii-hromatina-i-svyazyvanie-insulyatornyh-belkov-vtransfetsirovannyh-geneticheskih-konstruktsiyah"
-```
-
-Code block with no syntax highlighting:
-
-```
-Exporting HTML manuscript
-Exporting DOCX manuscript
-Exporting PDF manuscript
-```
-
-## Figures
-
-![
-**A square image at actual size and with a bottom caption.**
-Loaded from the latest version of image on GitHub.
-](https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png "Square image"){#fig:square-image}
-
-![
-**An image too wide to fit within page at full size.**
-Loaded from a specific (hashed) version of the image on GitHub.
-](https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/wide.png "Wide image"){#fig:wide-image}
-
-![
-**A tall image with a specified height.**
-Loaded from a specific (hashed) version of the image on GitHub.
-](https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/tall.png "Tall image"){#fig:tall-image height=3in}
-
-![
-**A vector `.svg` image loaded from GitHub.**
-The parameter `sanitize=true` is necessary to properly load SVGs hosted via GitHub URLs.
-White background specified to serve as a backdrop for transparent sections of the image.
-Note that if you want to export to Word (`.docx`), you need to download the image and reference it locally (e.g. `content/images/vector.svg`) instead of using a URL.
-](https://raw.githubusercontent.com/manubot/resources/main/test/vector.svg?sanitize=true "Vector image"){#fig:vector-image height=2.5in .white}
-
-## Tables
-
-| *Bowling Scores* | Jane          | John          | Alice         | Bob           |
-|:-----------------|:-------------:|:-------------:|:-------------:|:-------------:|
-| Game 1 | 150 | 187 | 210 | 105 |
-| Game 2 |  98 | 202 | 197 | 102 |
-| Game 3 | 123 | 180 | 238 | 134 |
-
-Table: A table with a top caption and specified relative column widths.
-{#tbl:bowling-scores}
-
-|         | Digits 1-33                        | Digits 34-66                      | Digits 67-99                      | Ref.                                                        |
-|:--------|:-----------------------------------|:----------------------------------|:----------------------------------|:------------------------------------------------------------|
-| pi      | 3.14159265358979323846264338327950 | 288419716939937510582097494459230 | 781640628620899862803482534211706 | [`piday.org`](https://www.piday.org/million/)               |
-| e       | 2.71828182845904523536028747135266 | 249775724709369995957496696762772 | 407663035354759457138217852516642 | [`nasa.gov`](https://apod.nasa.gov/htmltest/gifcity/e.2mil) |
-
-Table: A table too wide to fit within page.
-{#tbl:constant-digits}
-
-|          | **Colors** <!-- $colspan="2" --> |                      |
-|:--------:|:--------------------------------:|:--------------------:|
-| **Size** | **Text Color**                   | **Background Color** |
-| big      | blue                             | orange               |
-| small    | black                            | white                |
-
-Table: A table with merged cells using the `attributes` plugin.
-{#tbl: merged-cells}
-
-## Equations
-
-A LaTeX equation:
-
-$$\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}$$ {#eq:regular-equation}
-
-An equation too long to fit within page:
-
-$$x = a + b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9$$ {#eq:long-equation}
-
-## Special
-
-<i class="fas fa-exclamation-triangle"></i> [WARNING]{.semibold} _The following features are only supported and intended for `.html` and `.pdf` exports._
-_Journals are not likely to support them, and they may not display correctly when converted to other formats such as `.docx`._
-
-[Link styled as a button](https://manubot.org "Manubot Homepage"){.button}
-
-Adding arbitrary HTML attributes to an element using Pandoc's attribute syntax:
-
-::: {#some_id_1 .some_class style="background: #ad1457; color: white; margin-left: 40px;" title="a paragraph of text" data-color="white" disabled="true"}
-Manubot Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot.
-Manubot Manubot.
-Manubot.
-:::
-
-Adding arbitrary HTML attributes to an element with the Manubot `attributes` plugin (more flexible than Pandoc's method in terms of which elements you can add attributes to):
-
-Manubot Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot.
-Manubot Manubot.
-Manubot.
-<!-- $id="element_id" class="some_class" $style="color: #ad1457; margin-left: 40px;" $disabled="true" $title="a paragraph of text" $data-color="red" -->
-
-Available background colors for text, images, code, banners, etc:  
-
-`white`{.white}
-`lightgrey`{.lightgrey}
-`grey`{.grey}
-`darkgrey`{.darkgrey}
-`black`{.black}
-`lightred`{.lightred}
-`lightyellow`{.lightyellow}
-`lightgreen`{.lightgreen}
-`lightblue`{.lightblue}
-`lightpurple`{.lightpurple}
-`red`{.red}
-`orange`{.orange}
-`yellow`{.yellow}
-`green`{.green}
-`blue`{.blue}
-`purple`{.purple}
-
-Using the [Font Awesome](https://fontawesome.com/) icon set:
-
-<!-- include the Font Awesome library, per: https://fontawesome.com/start -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-
-<i class="fas fa-check"></i> <i class="fas fa-question"></i> <i class="fas fa-star"></i> <i class="fas fa-bell"></i> <i class="fas fa-times-circle"></i> <i class="fas fa-ellipsis-h"></i>
-
-[
-<i class="fas fa-scroll fa-lg"></i> **Light Grey Banner**<br>
-useful for *general information* - [manubot.org](https://manubot.org/)
-]{.banner .lightgrey}
-
-[
-<i class="fas fa-info-circle fa-lg"></i> **Blue Banner**<br>
-useful for *important information* - [manubot.org](https://manubot.org/)
-]{.banner .lightblue}
-
-[
-<i class="fas fa-ban fa-lg"></i> **Light Red Banner**<br>
-useful for *warnings* - [manubot.org](https://manubot.org/)
-]{.banner .lightred}
+[@svcalling_review]: doi:10.1186/s13059-019-1828-7
+[@sv_yeast]: doi:10.1038/ncomms14061
+[@sv_medical]: doi:10.3389/fgene.2019.00426
+[@long_read_sequencing_review]: doi:10.1038/s41576-021-00367-3
+[@manta]: doi:10.1093/bioinformatics/btv710
+[@delly]: doi:10.1093/bioinformatics/bts378
+[@lumpy]: doi:10.1186/gb-2014-15-6-r84
+[@sniffles]: doi:10.1038/s41592-018-0001-7 
+[@smrtsv]: doi:10.1101/gr.214007.116
+[@hprc]: doi:10.1038/s41586-023-05896-x
+[@pangenie]: doi:10.1038/s41588-022-01043-w
+[@pangenome_review]: doi:10.1146/annurev-genom-120219-080406
+[@giraffe]: doi:10.1126/science.abg8871
+[@kage]: doi:10.1186/s13059-022-02771-2
+[@reference_bias]: doi:10.1186/s13059-020-02160-7
+[@malva]: doi:10.1016/j.isci.2019.07.011
+[@glimpse]: doi:10.1038/s41588-020-00756-0
+[@truvari]: doi:10.1186/s13059-022-02840-6
+[@snakemake]: doi:10.1093/bioinformatics/bts480
+[@thousand_genomes]: doi:10.1038/nature15393
+[@bionumpy]: doi:10.1101/2022.12.21.521373
+[@numpy]: doi:10.1038/s41586-020-2649-2
+[@vg]: doi:10.1038/nbt.4227
+[@imputation_review]: doi:10.1146/annurev.genom.9.081307.164242
+[@bayestyper]: doi:10.1038/s41588-018-0145-5
+[@best_practices_benchmarking]: doi:10.1038/s41587-019-0054-x
+[@tandem_repeats]: doi:10.1038/nrg.2017.115
+[@graphtyper]: doi:10.1038/ng.3964
+[@giab]: doi:10.1016/j.xgen.2022.100128
 
 
 ## References {.page_break_before}
