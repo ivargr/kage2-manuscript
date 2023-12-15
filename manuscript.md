@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-12-15" />
   <meta name="citation_publication_date" content="2023-12-15" />
   <meta property="article:published_time" content="2023-12-15" />
-  <meta name="dc.modified" content="2023-12-15T15:10:00+00:00" />
-  <meta property="article:modified_time" content="2023-12-15T15:10:00+00:00" />
+  <meta name="dc.modified" content="2023-12-15T15:18:54+00:00" />
+  <meta property="article:modified_time" content="2023-12-15T15:18:54+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://ivargr.github.io/kage2-manuscript/" />
   <meta name="citation_pdf_url" content="https://ivargr.github.io/kage2-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ivargr.github.io/kage2-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ivargr.github.io/kage2-manuscript/v/323d4a76d2ac13a5b76fb729d6774424c56dbc35/" />
-  <meta name="manubot_html_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/323d4a76d2ac13a5b76fb729d6774424c56dbc35/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/323d4a76d2ac13a5b76fb729d6774424c56dbc35/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ivargr.github.io/kage2-manuscript/v/a3106afc56dad6821be3eb165ccc0d491b475d95/" />
+  <meta name="manubot_html_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/a3106afc56dad6821be3eb165ccc0d491b475d95/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/a3106afc56dad6821be3eb165ccc0d491b475d95/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -154,15 +154,15 @@ In the experiments presented in this manuscript, we only run the methods on one 
 
 We chose to mainly compare KAGE2 to PanGenie, as PanGenie has previously shown that it is both faster and more accurate when genotyping structural variants than other methods. Also from our own experience, PanGenie is the only existing available method that is able to genotype structural variants using pangenomes in reasonable time with decent accuracy. We also include BayesTyper [@bayestyper] as a reference, which is a method that works somewhat similarly to KAGE2 and PanGenie by representing variants with kmers and counting those kmers in the reads.
 
-We have implemented a comprehensive pipeline for benchmarking structural variant genotyping accuracy, which allows us to explore how a variety of parameters (such as read coverage, allele frequency, number of individuals in the pangenome, read error rate) affect accuracy.. Our pipeline can be found at <https://github.com/bioinf-benchmarking/sv-genotyping>. Experiments with various parameter configurations can be easily configured using this pipeline.
+We have implemented a comprehensive pipeline for benchmarking structural variant genotyping accuracy, which allows us to explore how a variety of parameters (such as read coverage, allele frequency, number of individuals in the pangenome, read error rate) affect accuracy. Our pipeline can be found at <https://github.com/bioinf-benchmarking/sv-genotyping>. Experiments with various parameter configurations can be easily configured using this pipeline.
 
 
 ### Measuring genotype accuracy
 Measuring the accuracy of structural variant genotyping is less trivial than with SNPs and short indels, as identical or near-identical structural variants can be represented in multiple ways. In previous benchmarks [@hprc; @pangenie], accuracy has been defined using *weighted genotype concordance*, which briefly explained is an average of the precision (correctly assigned genotypes divided by the total number of variants assigned that genotype by the genotyper) for each of the three possible genotypes (0/0, 0/1 and 1/1) (see [@pangenie] for formal definition). We find two issues with this metric:
 
-Equal weight is put on all genotypes (0/0, 0/1 and 1/1). Since the number of variants in each group is skewed (there are many more 0/0 than 0/1 and 1/1), this metric is easily  boosted by assigning 0/0 to most of the variants, and only calling 0/1 or 1/1 for variants that are predicted with high certainty. This allows to achieve a very high precision on 0/1 and 1/1 without sacrificing much precision on 0/0, meaning that the weighted average will get high although the overall accuracy is low (a large number of false 0/0 calls). We believe it is better to use the more standard way of measuring accuracy by using recall and precision, as is also recommended by others [@truvari, @best_practices_benchmarking].
+1. Equal weight is put on all genotypes (0/0, 0/1 and 1/1). Since the number of variants in each group is skewed (there are many more 0/0 than 0/1 and 1/1), this metric is easily  boosted by assigning 0/0 to most of the variants, and only calling 0/1 or 1/1 for variants that are predicted with high certainty. This allows to achieve a very high precision on 0/1 and 1/1 without sacrificing much precision on 0/0, meaning that the weighted average will get high although the overall accuracy is low (a large number of false 0/0 calls). We believe it is better to use the more standard way of measuring accuracy by using recall and precision, as is also recommended by others [@truvari, @best_practices_benchmarking].
 
-The weighted genotype concordance requires exact genotype match to mark a genotype call as correct. In practice, most structural variants in the draft human pangenome are multiallelic (sometimes with as many alleles as the number of haplotypes in the pangenome), and many alleles are almost identical within a multiallelic variant. Thus, requiring the genotyper to find the exact allele among many almost identical alleles is in our opinion too strict, and in practical settings what we are interested in is whether we are calling an allele that is similar enough (within some threshold) to the truth. The tool Truvari implements a way to measure accuracy with some slack on allele matching, and we refer to [@truvari] for a further discussion on this. We have thus chosen to use Truvari when measuring genotyping accuracy instead of the matching criterias used in [@hprc] and [@pangenie].
+2. The weighted genotype concordance requires exact genotype match to mark a genotype call as correct. In practice, most structural variants in the draft human pangenome are multiallelic (sometimes with as many alleles as the number of haplotypes in the pangenome), and many alleles are almost identical within a multiallelic variant. Thus, requiring the genotyper to find the exact allele among many almost identical alleles is in our opinion too strict, and in practical settings what we are interested in is whether we are calling an allele that is similar enough (within some threshold) to the truth. The tool Truvari implements a way to measure accuracy with some slack on allele matching, and we refer to [@truvari] for a further discussion on this. We have thus chosen to use Truvari when measuring genotyping accuracy instead of the matching criterias used in [@hprc] and [@pangenie].
 
 While previous benchmarks [@hprc; @pangenie] ignore genotype errors that are due to variants of the individual being genotyped not being present in the pangenome, we instead count these as errors (false negatives). This is because we want the experiment to be as close to a real-world scenario as possible, where we genotype an individual and are interested in how many variants we find (recall) and the accuracy of those calls (precision). A pangenome that lacks variants present in the individual will lead to lower recall since fewer variants can be detected by the genotyper, and we want the results to reflect this limitation.
 
@@ -179,6 +179,9 @@ KAGE2 is available at <https://github.com/kage-genotyper/kage/>. Instructions fo
 
 
 
+<div style="page-break-after: always;"></div>
+
+
 
 # Supplementary Material
 
@@ -187,7 +190,7 @@ KAGE2 is available at <https://github.com/kage-genotyper/kage/>. Instructions fo
 Figure {@fig:figure2} rerun with 5 random individuals (random seed in benchmarking pipeline ranging from 1-5).
 
 
-![](https://raw.githubusercontent.com/bioinf-benchmarking/sv-genotyping/master/plots/supplementary_figure1.png){#fig:supplementary_figure1   width="100%"}
+![](https://raw.githubusercontent.com/bioinf-benchmarking/sv-genotyping/master/plots/supplementary_figure1.png){#fig:supplementary_figure1   width="100%"}\
 
 
 ### Supplementary Figure 2
@@ -195,7 +198,7 @@ Figure 2 rerun with reads from 1000 Genomes Project on the whole human genome fo
 
 
 
-![](https://raw.githubusercontent.com/bioinf-benchmarking/sv-genotyping/master/plots/supplementary_figure2.png){#fig:supplementary_figure2   width="100%"}
+![](https://raw.githubusercontent.com/bioinf-benchmarking/sv-genotyping/master/plots/supplementary_figure2.png){#fig:supplementary_figure2   width="100%"}\
 
 
 ### Indexing time 

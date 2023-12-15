@@ -1,4 +1,4 @@
-BayesTyper
+Bayestyper
 Bayestyper’s
 benchmarking
 Bioinformatics
@@ -33,7 +33,7 @@ modularly
 multiallelic
 novo
 NumPy
-PanGenie
+pangenie
 Pangenome
 pangenomes
 pangenomic
