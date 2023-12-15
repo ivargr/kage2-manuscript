@@ -1,7 +1,7 @@
 andto
 Bayestyper
 Bayestyper’s
-Benchmarking
+benchmarking
 betweenfrom
 Bioinformatics
 BioNumPy
@@ -39,12 +39,12 @@ novo
 NumPy
 onuse
 pangenie
-Pangenome
+pangenome
 pangenomes
 pangenomic
 preselected
 quadratically
-Runtime
+runtime
 Sandve
 sincenecessary
 smrtsv
