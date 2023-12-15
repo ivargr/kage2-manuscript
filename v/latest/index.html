@@ -4,11 +4,12 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="John Doe" />
-  <meta name="author" content="Jane Roe" />
-  <meta name="dcterms.date" content="2023-11-28" />
+  <meta name="author" content="Ivar Grytten" />
+  <meta name="author" content="Knut Dagestad Rand" />
+  <meta name="author" content="Geir Kjetil Sandve" />
+  <meta name="dcterms.date" content="2023-12-15" />
   <meta name="keywords" content="markdown, publishing, manubot" />
-  <title>Manuscript Title</title>
+  <title>KAGE 2: Fast and accurate genotyping of structural variation using pangenomes</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -21,69 +22,6 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      {   }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-    code span.at { color: #7d9029; } /* Attribute */
-    code span.bn { color: #40a070; } /* BaseN */
-    code span.bu { color: #008000; } /* BuiltIn */
-    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #4070a0; } /* Char */
-    code span.cn { color: #880000; } /* Constant */
-    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-    code span.dt { color: #902000; } /* DataType */
-    code span.dv { color: #40a070; } /* DecVal */
-    code span.er { color: #ff0000; font-weight: bold; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #40a070; } /* Float */
-    code span.fu { color: #06287e; } /* Function */
-    code span.im { color: #008000; font-weight: bold; } /* Import */
-    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-    code span.op { color: #666666; } /* Operator */
-    code span.ot { color: #007020; } /* Other */
-    code span.pp { color: #bc7a00; } /* Preprocessor */
-    code span.sc { color: #4070a0; } /* SpecialChar */
-    code span.ss { color: #bb6688; } /* SpecialString */
-    code span.st { color: #4070a0; } /* String */
-    code span.va { color: #19177c; } /* Variable */
-    code span.vs { color: #4070a0; } /* VerbatimString */
-    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
@@ -110,428 +48,239 @@
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="Manuscript Title" />
-  <meta name="citation_title" content="Manuscript Title" />
-  <meta property="og:title" content="Manuscript Title" />
-  <meta property="twitter:title" content="Manuscript Title" />
-  <meta name="dc.date" content="2023-11-28" />
-  <meta name="citation_publication_date" content="2023-11-28" />
-  <meta property="article:published_time" content="2023-11-28" />
-  <meta name="dc.modified" content="2023-11-28T18:21:37+00:00" />
-  <meta property="article:modified_time" content="2023-11-28T18:21:37+00:00" />
+  <meta name="dc.title" content="KAGE 2: Fast and accurate genotyping of structural variation using pangenomes" />
+  <meta name="citation_title" content="KAGE 2: Fast and accurate genotyping of structural variation using pangenomes" />
+  <meta property="og:title" content="KAGE 2: Fast and accurate genotyping of structural variation using pangenomes" />
+  <meta property="twitter:title" content="KAGE 2: Fast and accurate genotyping of structural variation using pangenomes" />
+  <meta name="dc.date" content="2023-12-15" />
+  <meta name="citation_publication_date" content="2023-12-15" />
+  <meta property="article:published_time" content="2023-12-15" />
+  <meta name="dc.modified" content="2023-12-15T13:56:31+00:00" />
+  <meta property="article:modified_time" content="2023-12-15T13:56:31+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="John Doe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
-  <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Ivar Grytten" />
+  <meta name="citation_author_institution" content="Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway" />
+  <meta name="citation_author" content="Knut Dagestad Rand" />
+  <meta name="citation_author_institution" content="Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway" />
+  <meta name="citation_author_institution" content="Centre for Bioinformatics, University of Oslo, Oslo, Norway" />
+  <meta name="citation_author" content="Geir Kjetil Sandve" />
+  <meta name="citation_author_institution" content="Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway" />
+  <meta name="citation_author_institution" content="Centre for Bioinformatics, University of Oslo, Oslo, Norway" />
+  <meta name="citation_author_institution" content="UiORealArt Convergence Environment, University of Oslo, Oslo, Norway" />
   <link rel="canonical" href="https://ivargr.github.io/kage2-manuscript/" />
   <meta property="og:url" content="https://ivargr.github.io/kage2-manuscript/" />
   <meta property="twitter:url" content="https://ivargr.github.io/kage2-manuscript/" />
   <meta name="citation_fulltext_html_url" content="https://ivargr.github.io/kage2-manuscript/" />
   <meta name="citation_pdf_url" content="https://ivargr.github.io/kage2-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ivargr.github.io/kage2-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ivargr.github.io/kage2-manuscript/v/48c7d75849f6fa24b2c2d6a529edc028f1b2d029/" />
-  <meta name="manubot_html_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/48c7d75849f6fa24b2c2d6a529edc028f1b2d029/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/48c7d75849f6fa24b2c2d6a529edc028f1b2d029/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ivargr.github.io/kage2-manuscript/v/06ce69092ee7dce8cad3502679ec61c022f80fc5/" />
+  <meta name="manubot_html_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/06ce69092ee7dce8cad3502679ec61c022f80fc5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/06ce69092ee7dce8cad3502679ec61c022f80fc5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
   <!-- end Manubot generated metadata -->
-  
-  <!-- pandoc-eqnos: equation style -->
-  <style>
-    .eqnos { display: inline-block; position: relative; width: 100%; }
-    .eqnos br { display: none; }
-    .eqnos-number { position: absolute; right: 0em; top: 50%; line-height: 0; }
-  </style>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Manuscript Title</h1>
+<h1 class="title">KAGE 2: Fast and accurate genotyping of structural variation using pangenomes</h1>
 </header>
-<p><small><em>
-This manuscript
-(<a href="https://ivargr.github.io/kage2-manuscript/v/48c7d75849f6fa24b2c2d6a529edc028f1b2d029/">permalink</a>)
-was automatically generated
-from <a href="https://github.com/ivargr/kage2-manuscript/tree/48c7d75849f6fa24b2c2d6a529edc028f1b2d029">ivargr/kage2-manuscript@48c7d75</a>
-on November 28, 2023.
-</em></small></p>
-<h2 id="authors">Authors</h2>
-<ul>
-<li><p><strong>John Doe</strong>
-<br>
-<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
-<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
-· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
-<a href="https://github.com/johndoe">johndoe</a>
-· <img src="images/twitter.svg" class="inline_icon" width="16" height="16" alt="Twitter icon" />
-<a href="https://twitter.com/johndoe">johndoe</a>
-· <img src="images/mastodon.svg" class="inline_icon" width="16" height="16" alt="Mastodon icon" />
-<a href="https://mastodon.social/@johndoe">@johndoe@mastodon.social</a>
-<br>
-<small>
-Department of Something, University of Whatever
-· Funded by Grant XXXXXXXX
-</small></p></li>
-<li><p><strong>Jane Roe</strong>
-<sup><a href="#correspondence">✉</a></sup><br>
-<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
-<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
-· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
-<a href="https://github.com/janeroe">janeroe</a>
-<br>
-<small>
-Department of Something, University of Whatever; Department of Whatever, University of Something
-</small></p></li>
-</ul>
+<p>Ivar Grytten<sup><a href="#correspondence">✉</a>,1,2</sup>, Knut Dagestad Rand<sup>1,2</sup>, Geir Kjetil Sandve<sup>1,2,3</sup></p>
 <div id="correspondence">
-<p>✉ — Correspondence possible via <a href="https://github.com/ivargr/kage2-manuscript/issues">GitHub Issues</a>
-or email to
-Jane Roe &lt;jane.roe@whatever.edu&gt;.</p>
+<p>✉ — Correspondence to
+Ivar Grytten &lt;ivargry@ifi.uio.no&gt;.</p>
 </div>
-<h2 class="page_break_before" id="abstract">Abstract</h2>
-<p>This manuscript is a template (aka “rootstock”) for <a href="https://manubot.org/" title="Manubot">Manubot</a>, a tool for writing scholarly manuscripts.
-Use this template as a starting point for your manuscript.</p>
-<p>The rest of this document is a full list of formatting elements/features supported by Manubot.
-Compare the input (<code>.md</code> files in the <code>/content</code> directory) to the output you see below.</p>
-<h2 id="basic-formatting">Basic formatting</h2>
-<p><strong>Bold</strong> <strong>text</strong></p>
-<p><span class="semibold">Semi-bold text</span></p>
-<p><span class="center">Centered text</span></p>
-<p><span class="right">Right-aligned text</span></p>
-<p><em>Italic</em> <em>text</em></p>
-<p>Combined <em>italics and <strong>bold</strong></em></p>
-<p><del>Strikethrough</del></p>
-<ol type="1">
-<li>Ordered list item</li>
-<li>Ordered list item
-<ol type="a">
-<li>Sub-item</li>
-<li>Sub-item
-<ol type="i">
-<li>Sub-sub-item</li>
-</ol></li>
-</ol></li>
-<li>Ordered list item
-<ol type="a">
-<li>Sub-item</li>
-</ol></li>
-</ol>
-<ul>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
-</ul>
-<p>subscript: H<sub>2</sub>O is a liquid</p>
-<p>superscript: 2<sup>10</sup> is 1024.</p>
-<p><a href="https://www.google.com/search?q=superscript+generator">unicode superscripts</a>⁰¹²³⁴⁵⁶⁷⁸⁹</p>
-<p><a href="https://www.google.com/search?q=superscript+generator">unicode subscripts</a>₀₁₂₃₄₅₆₇₈₉</p>
-<p>A long paragraph of text.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<p>Putting each sentence on its own line has numerous benefits with regard to <a href="https://asciidoctor.org/docs/asciidoc-recommended-practices/#one-sentence-per-line">editing</a> and <a href="https://rhodesmill.org/brandon/2012/one-sentence-per-line/">version control</a>.</p>
-<p>Line break without starting a new paragraph by putting<br />
-two spaces at end of line.</p>
-<h2 id="document-organization">Document organization</h2>
-<p>Document section headings:</p>
-<h1 id="heading-1">Heading 1</h1>
-<h2 id="heading-2">Heading 2</h2>
-<h3 id="heading-3">Heading 3</h3>
-<h4 id="heading-4">Heading 4</h4>
-<h5 id="heading-5">Heading 5</h5>
-<h6 id="heading-6">Heading 6</h6>
-<h3 class="center page_center" id="a-heading-centered-on-its-own-printed-page">A heading centered on its own printed page</h3>
-<!-- an arbitrary comment. visible in input, but not visible in output. -->
-<p>Horizontal rule:</p>
-<hr />
-<p><code>Heading 1</code>’s are recommended to be reserved for the title of the manuscript.</p>
-<p><code>Heading 2</code>’s are recommended for broad sections such as <em>Abstract</em>, <em>Methods</em>, <em>Conclusion</em>, etc.</p>
-<p><code>Heading 3</code>’s and <code>Heading 4</code>’s are recommended for sub-sections.</p>
-<h2 id="links">Links</h2>
-<p>Bare URL link: <a href="https://manubot.org" class="uri">https://manubot.org</a></p>
-<p><a href="https://manubot.org">Long link with lots of words and stuff and junk and bleep and blah and stuff and other stuff and more stuff yeah</a></p>
-<p><a href="https://manubot.org">Link with text</a></p>
-<p><a href="https://manubot.org" title="Manubot Homepage">Link with hover text</a></p>
-<p><a href="https://manubot.org">Link by reference</a></p>
-<h2 id="citations">Citations</h2>
-<p>Citation by DOI <span class="citation" data-cites="IhliSZDo">[<a href="#ref-IhliSZDo" role="doc-biblioref">1</a>]</span>.</p>
-<p>Citation by PubMed Central ID <span class="citation" data-cites="mSMVRkoc">[<a href="#ref-mSMVRkoc" role="doc-biblioref">2</a>]</span>.</p>
-<p>Citation by PubMed ID <span class="citation" data-cites="126Wi5Us4">[<a href="#ref-126Wi5Us4" role="doc-biblioref">3</a>]</span>.</p>
-<p>Citation by Wikidata ID <span class="citation" data-cites="QhC8yJ7V">[<a href="#ref-QhC8yJ7V" role="doc-biblioref">4</a>]</span>.</p>
-<p>Citation by ISBN <span class="citation" data-cites="zBPP9YKu">[<a href="#ref-zBPP9YKu" role="doc-biblioref">5</a>]</span>.</p>
-<p>Citation by URL <span class="citation" data-cites="1GGGHdsew">[<a href="#ref-1GGGHdsew" role="doc-biblioref">6</a>]</span>.</p>
-<p>Citation by alias <span class="citation" data-cites="PZMP42Ak">[<a href="#ref-PZMP42Ak" role="doc-biblioref">7</a>]</span>.</p>
-<p>Multiple citations can be put inside the same set of brackets <span class="citation" data-cites="IhliSZDo PZMP42Ak zBPP9YKu">[<a href="#ref-IhliSZDo" role="doc-biblioref">1</a>,<a href="#ref-zBPP9YKu" role="doc-biblioref">5</a>,<a href="#ref-PZMP42Ak" role="doc-biblioref">7</a>]</span>.
-Manubot plugins provide easier, more convenient visualization of and navigation between citations <span class="citation" data-cites="YuJbg3zO 126Wi5Us4 mSMVRkoc PZMP42Ak">[<a href="#ref-mSMVRkoc" role="doc-biblioref">2</a>,<a href="#ref-126Wi5Us4" role="doc-biblioref">3</a>,<a href="#ref-PZMP42Ak" role="doc-biblioref">7</a>,<a href="#ref-YuJbg3zO" role="doc-biblioref">8</a>]</span>.</p>
-<p>Citation tags (i.e. aliases) can be defined in their own paragraphs using Markdown’s reference link syntax:</p>
-<h2 id="referencing-figures-tables-equations">Referencing figures, tables, equations</h2>
-<p>Figure <a href="#fig:square-image">1</a></p>
-<p>Figure <a href="#fig:wide-image">2</a></p>
-<p>Figure <a href="#fig:tall-image">3</a></p>
-<p>Figure <a href="#fig:vector-image">4</a></p>
-<p>Table <a href="#tbl:bowling-scores">1</a></p>
-<p>Equation <a href="#eq:regular-equation">1</a></p>
-<p>Equation <a href="#eq:long-equation">2</a></p>
-<h2 id="quotes-and-code">Quotes and code</h2>
-<blockquote>
-<p>Quoted text</p>
-</blockquote>
-<blockquote>
-<p>Quoted block of text</p>
-<p>Two roads diverged in a wood, and I—<br />
-I took the one less traveled by,<br />
-And that has made all the difference.</p>
-</blockquote>
-<p>Code <code>in the middle</code> of normal text, aka <code>inline code</code>.</p>
-<p>Code block with Python syntax highlighting:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> manubot.cite.doi <span class="im">import</span> expand_short_doi</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> test_expand_short_doi():</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    doi <span class="op">=</span> expand_short_doi(<span class="st">&quot;10/c3bp&quot;</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># a string too long to fit within page:</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> doi <span class="op">==</span> <span class="st">&quot;10.25313/2524-2695-2018-3-vliyanie-enhansera-copia-i-insulyatora-gypsy-na-sintez-ernk-modifikatsii-hromatina-i-svyazyvanie-insulyatornyh-belkov-vtransfetsirovannyh-geneticheskih-konstruktsiyah&quot;</span></span></code></pre></div>
-<p>Code block with no syntax highlighting:</p>
-<pre><code>Exporting HTML manuscript
-Exporting DOCX manuscript
-Exporting PDF manuscript</code></pre>
-<h2 id="figures">Figures</h2>
-<div id="fig:square-image" class="fignos">
+<p><small>
+1 — Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway<br>
+2 — Centre for Bioinformatics, University of Oslo, Oslo, Norway<br>
+3 — UiORealArt Convergence Environment, University of Oslo, Oslo, Norway<br>
+</small></p>
+<h2 id="abstract">Abstract</h2>
+<p>Structural variation is known to play an important and often overlooked role in regulating disease and traits, but accurately detecting structural variants from sequencing data has traditionally been difficult. However, recent improvements in high-quality genome assembly along with methodological advancements in <em>pangenome</em> creation have opened up the landscape for methods that use such pangenomes for structural variant calling and genotyping. We here present KAGE2, which accurately and efficiently genotypes structural variation by exploiting the availability of pangenomes that represent known variation in a population. Through comprehensive benchmarking, we highlight limitations of existing methodology and show that KAGE2 is more accurate and considerably faster than existing methods.</p>
+<h2 id="introduction">Introduction</h2>
+<p>While the study of genetic variation traditionally has been focused on SNPs and short indels, we now know that structural variation plays a much more important role than previously assumed <span class="citation" data-cites="7mzK8m8A YfgNV8TZ 7BsVHkd5">[<a href="#ref-7mzK8m8A" role="doc-biblioref">1</a>,<a href="#ref-YfgNV8TZ" role="doc-biblioref">2</a>,<a href="#ref-7BsVHkd5" role="doc-biblioref">3</a>]</span>. Thus, being able to cost-effectively detect structural variation in a genomic sample is of great importance. Traditionally, detecting structural variation has been done by mapping short-read sequences to a reference genome, which yields much lower accuracy than equivalent methods for SNPs/short indels, since reads originating from the structural variants are less likely to map to the reference <span class="citation" data-cites="ZROUgx5p">[<a href="#ref-ZROUgx5p" role="doc-biblioref">4</a>]</span>. A solution has been to use longer reads <span class="citation" data-cites="NTaj3OT2">[<a href="#ref-NTaj3OT2" role="doc-biblioref">5</a>]</span>, and while there exist several tools <span class="citation" data-cites="13ZFMJxdq rs7e40wC">[<a href="#ref-13ZFMJxdq" role="doc-biblioref">6</a>,<a href="#ref-rs7e40wC" role="doc-biblioref">7</a>]</span> that are able to accurately detect structural variation based on long reads, it comes with a markedly increased sequencing cost.</p>
+<p>A more promising “hybrid” approach, leveraging both the accuracy of long-read methods and the cost-effectiveness of short-read sequencing, has recently gained traction <span class="citation" data-cites="CqG8RQye">[<a href="#ref-xTxiitR" role="doc-biblioref">9</a>]</span>. The idea of this hybrid approach is to create a high-quality database (referred to as a <em>pangenome</em>) of some select genomes and their variants using accurate long-read sequencing. With such a pangenome <span class="citation" data-cites="m03AmiSF">[<a href="#ref-m03AmiSF" role="doc-biblioref">10</a>]</span>, variants in an individual of interest can be characterized by <em>genotyping</em> variants in the pangenome, i.e. for every known variant in the pangenome, estimating the individual’s genotype for that variant. This can be done with short-read sequencing by comparing sequenced reads directly to the pangenome (e.g. through graph-based mapping-techniques <span class="citation" data-cites="10jxt15v0 WCEeLZ0k">[<a href="#ref-10jxt15v0" role="doc-biblioref">11</a>,<a href="#ref-WCEeLZ0k" role="doc-biblioref">12</a>]</span>). This approach allows for discovering any variation in a sequenced individual that is already represented in the pangenome, and circumvents the issue of mapping short reads to a linear reference genome, which also is known to lead to reference bias <span class="citation" data-cites="cO2lshLU">[<a href="#ref-cO2lshLU" role="doc-biblioref">13</a>]</span>. Another benefit of this approach is that known population structure encoded in the pangenome can be used to improve accuracy, e.g. by “imputing” variants that are difficult to call using information from other variants <span class="citation" data-cites="kWWwizJT xTxiitR">[<a href="#ref-xTxiitR" role="doc-biblioref">9</a>,<a href="#ref-kWWwizJT" role="doc-biblioref">14</a>]</span>.</p>
+<p>This genotyping approach has previously shown promising results for SNPs and short indels <span class="citation" data-cites="kWWwizJT ohTIiqfV xTxiitR MpmJz9S5">[<a href="#ref-xTxiitR" role="doc-biblioref">9</a>,<a href="#ref-kWWwizJT" role="doc-biblioref">14</a>,<a href="#ref-ohTIiqfV" role="doc-biblioref">15</a>,<a href="#ref-MpmJz9S5" role="doc-biblioref">16</a>]</span>, but its use has been limited for structural variation, since few good pangenomes with structural variation have been available. However, the recent release of a high-quality human pangenome containing 47 haplotype-resolved individuals <span class="citation" data-cites="CqG8RQye">[<a href="#ref-CqG8RQye" role="doc-biblioref">8</a>]</span> now make this approach much more relevant for structural variant genotyping of humans (and there are also similar ongoing projects for other species [cite tomato?]). As part of this human pangenome release, the authors showed that the genotyper PanGenie <span class="citation" data-cites="xTxiitR">[<a href="#ref-xTxiitR" role="doc-biblioref">9</a>]</span> is able to genotype structural variation of a new individual (an individual not present in the pangenome) with fairly high accuracy. A problem with PanGenie is, however, that its runtime scales quadratically with pangenome size (number of individuals in the pangenome). This is a problem as pangenomes are expected to grow significantly in size in the years to come.</p>
+<p>We here present KAGE2, which expands recent methodology for SNP/indel genotyping to allow pangenome-based genotyping of structural variants. We here show that KAGE2 is more accurate than existing methods for genotyping structural variation in addition to being considerably faster.</p>
+<h2 id="results">Results</h2>
+<p>We present KAGE 2, which extends our previously published genotyper KAGE to enable genotyping of structural variants. KAGE2 genotypes structural variants through a strategy similar to SNP/indel genotyping, by exploiting a pangenome that represents known structural variation in a population. The variants present in the population are represented by kmers, allowing KAGE2 to infer structural variant genotypes by comparing these variant kmers to kmers present in the reads for the individual that is being genotyped. We refer to <span class="citation" data-cites="kWWwizJT">[<a href="#ref-kWWwizJT" role="doc-biblioref">14</a>]</span> for an overview of the original KAGE genotyper. The main methodological changes from KAGE to KAGE2 are how kmers are selected from the pangenome in order to represent structural variants (see Methods). KAGE2 also implements direct support for imputation using GLIMPSE <span class="citation" data-cites="lu1eqKl0">[<a href="#ref-lu1eqKl0" role="doc-biblioref">17</a>]</span> (see Methods).</p>
+<p>In the following, we present various benchmarks that compare the accuracy of KAGE2 against the existing genotypers PanGenie and Bayestyper, using the recently published high quality <em>draft human pangenome</em> <span class="citation" data-cites="CqG8RQye">[<a href="#ref-CqG8RQye" role="doc-biblioref">8</a>]</span> We do this using a leave-one-out setup where an individual is removed from the pangenome and genotyped using the remaining pangenome (see Methods).</p>
+<h4 id="kage-is-faster-and-more-accurate-than-existing-methods">KAGE is faster and more accurate than existing methods</h4>
+<p>We run KAGE2 and previously proposed genotypers with various read coverages (average number of reads per base pair), and compute accuracy as F1 score using Truvari <span class="citation" data-cites="uFRC6FaZ">[<a href="#ref-uFRC6FaZ" role="doc-biblioref">18</a>]</span>. As can bee seen from Figure <a href="#fig:figure1">1</a>a, KAGE2 outperforms other methods for all read coverages. We also ran the same experiments with 5 other randomly picked individuals, which all showed similar results (see Supplementary Figure 1).</p>
+<p>Figure <a href="#fig:figure1">1</a>b shows the runtime of the genotypers as a function of pangenome size (number of individuals in the pangenome, see Methods). KAGE is considerably faster than competing methods, and its runtime is independent of pangenome size. Note that Bayestyper’s runtime is the same for all pangenomes, which is because it does not use any information from the individuals in the pangenome. Since PanGenie uses a Hidden Markov model with possible haplotype path as states, its runtime increases drastically with the number of individuals. The time spent for creating indexes for PanGenie and KAGE is not included in the runtime (but listed in the Supplementary Material).</p>
+<div id="fig:figure1" class="fignos">
 <figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png" alt="Figure 1: A square image at actual size and with a bottom caption. Loaded from the latest version of image on GitHub." />
-<figcaption aria-hidden="true"><span>Figure 1:</span> <strong>A square image at actual size and with a bottom caption.</strong>
-Loaded from the latest version of image on GitHub.</figcaption>
+<img src="https://raw.githubusercontent.com/bioinf-benchmarking/sv-genotyping/master/plots/figure1.png" style="width:90.0%" alt="Figure 1: a) Accuracy on genotyping structural variants when removing a random individual from the pangenome and genotyping that individual. Baseline (guessing) is a naive baseline genotyper that does not use any reads, but instead “guesses” the genotype just by using population priors (Methods). b) Runtime as a function of pangenome size (number of individuals in the pangenome) when running on chromosome 1 of the Draft Human Pangenome [8]" />
+<figcaption aria-hidden="true"><span>Figure 1:</span> a) Accuracy on genotyping structural variants when removing a random individual from the pangenome and genotyping that individual. <em>Baseline (guessing)</em> is a naive baseline genotyper that does not use any reads, but instead “guesses” the genotype just by using population priors (Methods). b) Runtime as a function of pangenome size (number of individuals in the pangenome) when running on chromosome 1 of the Draft Human Pangenome <span class="citation" data-cites="CqG8RQye">[<a href="#ref-CqG8RQye" role="doc-biblioref">8</a>]</span></figcaption>
 </figure>
 </div>
-<div id="fig:wide-image" class="fignos">
+<h4 id="kage-performs-well-on-different-variant-typesregions">KAGE performs well on different variant types/regions</h4>
+<p>To investigate the observed performance in more detail, Figure <a href="#fig:figure2">2</a> shows the genotyping accuracy stratified by type of genomic regions and type of variant (using regions defined by GIAB <span class="citation" data-cites="RSEHWg4W">[<a href="#ref-RSEHWg4W" role="doc-biblioref">19</a>]</span>). KAGE is generally the best-performing genotyper across all variant-types and regions.</p>
+<div id="fig:figure2" class="fignos">
 <figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/wide.png" alt="Figure 2: An image too wide to fit within page at full size. Loaded from a specific (hashed) version of the image on GitHub." />
-<figcaption aria-hidden="true"><span>Figure 2:</span> <strong>An image too wide to fit within page at full size.</strong>
-Loaded from a specific (hashed) version of the image on GitHub.</figcaption>
+<img src="https://raw.githubusercontent.com/bioinf-benchmarking/sv-genotyping/master/plots/figure2.png" style="width:100.0%" alt="Figure 2: Accuracy for deletions and insertions in various types of genomic regions." />
+<figcaption aria-hidden="true"><span>Figure 2:</span> Accuracy for deletions and insertions in various types of genomic regions.</figcaption>
 </figure>
 </div>
-<div id="fig:tall-image" class="fignos">
+<h4 id="pangenome-size-matters">Pangenome size matters</h4>
+<p>A limitation of pangenomic genotypers as opposed to de novo variant callers is that the genotypers can only detect a variant if it is also present in the pangenome used for genotyping. Thus, larger pangenomes (created from more individuals) opens for higher recall, though with a risk of lower precision. Figure <a href="#fig:figure3">3</a> shows accuracy as a function of the number of individuals in the pangenome. As can be seen, accuracy increases as more individuals are added, although with a diminishing return for every additional individual. This indicates that it is likely worth the effort to invest in creating even larger pangenomes, and that having methods like KAGE that have runtime independent of pangenome size is important. Interestingly, the baseline genotyper performs worse when the pangenome grows, which is likely because the inclusion of more rare variants increases the number of false positive calls.</p>
+<div id="fig:figure3" class="fignos">
 <figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/tall.png" style="height:3in" alt="Figure 3: A tall image with a specified height. Loaded from a specific (hashed) version of the image on GitHub." />
-<figcaption aria-hidden="true"><span>Figure 3:</span> <strong>A tall image with a specified height.</strong>
-Loaded from a specific (hashed) version of the image on GitHub.</figcaption>
+<img src="https://raw.githubusercontent.com/bioinf-benchmarking/sv-genotyping/master/plots/figure3.png" style="width:100.0%" alt="Figure 3: Accuracy as a function of pangenome size (number of individuals in the pangenome) on all structural variants." />
+<figcaption aria-hidden="true"><span>Figure 3:</span> Accuracy as a function of pangenome size (number of individuals in the pangenome) on all structural variants.</figcaption>
 </figure>
 </div>
-<div id="fig:vector-image" class="fignos">
+<h4 id="snpsindels-help-calling-structural-variants">SNPs/indels help calling structural variants</h4>
+<p>We also investigate whether the genotyping of structural variants is improved by including more SNPs and indels in the pangenome. We do this by creating a variety of pangenomes, where we for each pangenome filter away SNPs/indels that have allele frequency lower than a given threshold. As can be seen from Figure <a href="#fig:figure4">4</a>, both PanGenie and KAGE benefit from more SNPs/indels.</p>
+<div id="fig:figure4" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/manubot/resources/main/test/vector.svg?sanitize=true" class="white" style="height:2.5in" alt="Figure 4: A vector .svg image loaded from GitHub. The parameter sanitize=true is necessary to properly load SVGs hosted via GitHub URLs. White background specified to serve as a backdrop for transparent sections of the image. Note that if you want to export to Word (.docx), you need to download the image and reference it locally (e.g. content/images/vector.svg) instead of using a URL." />
-<figcaption aria-hidden="true"><span>Figure 4:</span> <strong>A vector <code>.svg</code> image loaded from GitHub.</strong>
-The parameter <code>sanitize=true</code> is necessary to properly load SVGs hosted via GitHub URLs.
-White background specified to serve as a backdrop for transparent sections of the image.
-Note that if you want to export to Word (<code>.docx</code>), you need to download the image and reference it locally (e.g. <code>content/images/vector.svg</code>) instead of using a URL.</figcaption>
+<img src="https://raw.githubusercontent.com/bioinf-benchmarking/sv-genotyping/master/plots/figure4.png" style="width:80.0%" alt="Figure 4: Accuracy when SNPs/indels have been filtered using various allele frequency cutoffs. All SNPs/indels with allele frequency lower than the cutoff have been removed, meaning that the number of SNPs/indels decreases as the cutoff increases. The baseline genotyper has constant accuracy, since it only genotypes variants using population priors (which for structural variants do not change when SNPs/indels are removed)." />
+<figcaption aria-hidden="true"><span>Figure 4:</span> Accuracy when SNPs/indels have been filtered using various allele frequency cutoffs. All SNPs/indels with allele frequency lower than the cutoff have been removed, meaning that the number of SNPs/indels decreases as the cutoff increases. The baseline genotyper has constant accuracy, since it only genotypes variants using population priors (which for structural variants do not change when SNPs/indels are removed).</figcaption>
 </figure>
 </div>
-<h2 id="tables">Tables</h2>
-<div id="tbl:bowling-scores" class="tablenos">
-<table id="tbl:bowling-scores">
-<caption><span>Table 1:</span> A table with a top caption and specified relative column widths.
-</caption>
-<colgroup>
-<col style="width: 23%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-</colgroup>
+<h2 id="discussion">Discussion</h2>
+<p>We have presented KAGE2, a genotyper that is able to efficiently and accurately genotype structural variation from short reads by using a pangenome representation of a population. We find it useful to view the problem of calling structural variants based on pangenomes as consisting of of two sub-problems: 1) The problem of extracting useful information from reads (for KAGE and PanGenie this is based on kmers), and 2) the problem of using information about individuals represented by the pangenome to improve prediction (imputation). While PanGenie solves both these problems jointly using a Hidden Markov model, KAGE2 approaches these modularly as two separate problems. This allows us to use external software (GLIMPSE) for the imputation model. A benefit of defining these as two problems is that it allows for the design of a modular solution where existing tools can be used. If another better imputation tool than GLIMPSE would be made available at some point, which is a likely development, the imputation part can be easily exchanged within KAGE2.</p>
+<p>A surprising result is the high level of accuracy achieved by KAGE2 (with use of GLIMPSE imputation) when read coverage is low (0.5-2x) (Figure <a href="#fig:figure1">1</a>). In fact, there is almost no gain in accuracy when read coverage is increased beyond 5x (towards the more commonly used 30x). We speculate that the reason is that most structural variants are difficult to call based on read information alone, and that accurate genotyping is mainly driven by imputation. The fact that accuracy goes drastically down when there are fewer SNPs/indels in the pangenome (Figure <a href="#fig:figure3">3</a>) further shows how important it is to include SNPs/indels in the pangenome.</p>
+<p>While the recently released draft human pangenome only consists of 47 individuals, the Human Pangenome Reference Consortium has announced plans to release a pangenome with 350 individuals in 2024 <span class="citation" data-cites="CqG8RQye">[<a href="#ref-CqG8RQye" role="doc-biblioref">8</a>]</span>. As it is clear pangenomes will only continue to grow in the future, we believe KAGE2 to be an important contribution to the field not only because of its current improvement over state-of-the-art methods, but also because it will be able to computationally scale and exploit the increased information expected from future, larger pangenomes.</p>
+<h2 id="methods">Methods</h2>
+<p>We here describe how KAGE2 is implemented and how the experiments were performed. When referring to structural variants in this manuscript, we lean onuse the commonly used definition of structural variants being variants where either allele contains 50 or more bases.</p>
+<h3 id="kage2-implementation">KAGE2 implementation</h3>
+<p>The main difference betweenfrom KAGE andto KAGE 2 is that KAGE 2 employsimplements an improvedbetter strategyway of for picking kmers tofor representing variants, which is needed sincenecessary for structural variants that are often multiallelic and containhave repetitive sequences. Through experimentation, we found it important to select kmers that have low frequency locally (within the variant) as well as globally (in the pangenome). Kmers are chosen by looking at multiallelic variant sites, so all overlapping variants in a region are grouped and looked at together as one multiallelic variant. For each such multiallelic site, we first find all kmers covering all alleles of this multiallelic site. Among these kmers, the aim is to find a kmer to represent each allele. For each kmer candidate we assign a score that is based on how often this kmer is observed in the pangenome globally as well as how often it is observed locally at the multiallelic variant. We minimize the global score, but found it more important to minimize the local score, as it is important to be able to separate the alleles of a multiallelic variant when genotyping. Thus, we weigh the local score twice as much as the global score, and for each allele pick the kmer with lowest score. For some variant sites, several alleles will end up being represented by the same kmer (because no unique kmers can be found). In such cases, KAGE may still be able to make a correct genotype call because the expected frequency of each kmer in input reads may be different depending on which combination of alleles the individual has. Selecting and scoring kmers is done efficiently using BioNumPy <span class="citation" data-cites="i8VR6l5D">[<a href="#ref-i8VR6l5D" role="doc-biblioref">20</a>]</span> and NumPy <span class="citation" data-cites="1LexfAxj">[<a href="#ref-1LexfAxj" role="doc-biblioref">21</a>]</span>.</p>
+<h3 id="using-glimpse-for-imputation">Using GLIMPSE for imputation</h3>
+<p>A central part of how KAGE performs genotyping is the use of estimated genotype likelihoods between preselected pairs of variants to guide genotyping, by using information from the population about how genotypes of pairs of variants are “correlated”. This is a simple form of imputation <span class="citation" data-cites="hqVwMwQf">[<a href="#ref-hqVwMwQf" role="doc-biblioref">22</a>]</span>, and while the original KAGE genotyper has a fairly basic and efficient way of doing this (using only a single variant to impute another variant), which worked well for SNPs and indels, we have found this to be less successful for structural variation. Instead, we have found GLIMPSE <span class="citation" data-cites="lu1eqKl0">[<a href="#ref-lu1eqKl0" role="doc-biblioref">17</a>]</span> to work well with KAGE and thus rely on GLIMPSE for imputation. Whenever we are referring to KAGE in the results, we refer to KAGE with imputation done by GLIMPSE. KAGE2 also optimally still supports genotyping using the previous builtin imputation model.</p>
+<h3 id="benchmarking">Benchmarking</h3>
+<p>All experiments presented are run using the human draft pangenome <span class="citation" data-cites="CqG8RQye">[<a href="#ref-CqG8RQye" role="doc-biblioref">8</a>]</span>. This pangenome is built from whole-genome assembly of 47 individuals and is expected to represent most of these individuals SNPs, indels and structural variants with high accuracy. We perform experiments by removing one individual from the pangenome and genotype that individual using the remaining pangenome, mimicking a real-case scenario where we have an existing pangenome and genotype a new sample that is not present in the pangenome using short-read sequencing. This way, we can compare the genotypes we found to the original genotypes to get an estimate of genotyping accuracy.</p>
+<p>In the experiments presented in this manuscript, we only run the methods on one human chromosome with simulated reads. This allows us to explore several parameters efficiently. In the Supplementary material, we run a subset of the experiments on the whole human genome with reads from the 1000 Genomes Project <span class="citation" data-cites="11PJIeJyi">[<a href="#ref-11PJIeJyi" role="doc-biblioref">23</a>]</span>, showing that results on the whole genome with non-simulated reads give similar results.</p>
+<p>We chose to mainly compare KAGE2 to PanGenie, as PanGenie has previously shown that it is both faster and more accurate when genotyping structural variants than other methods, and from our experience, PanGenie is the only existing available method that is able to genotype structural variants using pangenomes in reasonable time with good accuracy. We also include BayesTyper <span class="citation" data-cites="14Uxmwbxm">[<a href="#ref-14Uxmwbxm" role="doc-biblioref">24</a>]</span> as a reference, which is a method that works somewhat similarly to KAGE and PanGenie by representing variants with kmers and counting those kmers in the reads.</p>
+<p>We have implemented an extensive pipeline for benchmarking structural variant genotyping accuracy that allows exploring various parameters and how they affect accuracy, such as read coverage, allele frequency, number of individuals in the pangenome, read error rate, etc. Our pipeline can be found at <a href="https://github.com/bioinf-benchmarking/sv-genotyping" class="uri">https://github.com/bioinf-benchmarking/sv-genotyping</a> and experiments with various parameter configurations can easily be configured.</p>
+<h3 id="measuring-genotype-accuracy">Measuring genotype accuracy</h3>
+<p>Measuring the accuracy of structural variant genotyping is less trivial than with SNPs and short indels, as identical or near-identical structural variants can be represented in multiple ways. In previous benchmarks <span class="citation" data-cites="CqG8RQye xTxiitR">[<a href="#ref-CqG8RQye" role="doc-biblioref">8</a>,<a href="#ref-xTxiitR" role="doc-biblioref">9</a>]</span>, accuracy has been defined using <em>weighted genotype concordance</em>, which briefly explained is an average of the precision (correctly assigned genotypes divided by the total number of variants assigned that genotype by the genotyper) for each of the three possible genotypes (0/0, 0/1 and 1/1) (see <span class="citation" data-cites="xTxiitR">[<a href="#ref-xTxiitR" role="doc-biblioref">9</a>]</span> for formal definition). We find two problems with this measure:</p>
+<p>Equal weight is put on all genotypes (0/0, 0/1 and 1/1). Since the number of variants in each group is skewed (there are many more 0/0 than 0/1 and 1/1), you can easily boost this measure by assigning 0/0 to most of the variants and only calling those you are very certain on as 0/1 or 1/1. That way you can get a very high precision on 0/1 and 1/1 without sacrificing much precision on 0/0, which means that the weighted average can get high although overall accuracy is low (many false 0/0). We believe it is better to use the more standard way of measuring accuracy by using recall and precision, as is also recommended by others <span class="citation" data-cites="uFRC6FaZ">[<a href="#ref-g7Kb78ap" role="doc-biblioref">25</a>]</span>.</p>
+<p>The weighted genotype concordance requires exact genotype match to mark a genotype call as correct. In practice, most structural variants in the draft human pangenome are multiallelic (sometimes with as many alleles as the number of haplotypes in the pangenome), and many alleles are almost identical within a multiallelic variant. Thus, requiring the genotyper to find the exact allele among many almost identical alleles is in our opinion too strict, and in practical settings what we are interested in is whether we are calling an allele that is similar enough (within some threshold) to the truth. The tool Truvari implements a way to measure accuracy with some slack on allele matching, and we refer to <span class="citation" data-cites="uFRC6FaZ">[<a href="#ref-uFRC6FaZ" role="doc-biblioref">18</a>]</span> for a further discussion on this. We have thus chosen to use Truvari when measuring genotyping accuracy instead of the matching criterias used in <span class="citation" data-cites="CqG8RQye">[<a href="#ref-CqG8RQye" role="doc-biblioref">8</a>]</span> and <span class="citation" data-cites="xTxiitR">[<a href="#ref-xTxiitR" role="doc-biblioref">9</a>]</span>.</p>
+<p>While previous benchmarks <span class="citation" data-cites="CqG8RQye xTxiitR">[<a href="#ref-CqG8RQye" role="doc-biblioref">8</a>,<a href="#ref-xTxiitR" role="doc-biblioref">9</a>]</span> ignore genotype errors that are due to variants of the individual being genotyped not being present in the pangenome, we instead count these as errors (false negatives). This is because we want the experiment to be as close to a real-world scenario as possible, where we genotype an individual and are interested in how many variants we find (recall) and the accuracy of those calls (precision). A pangenome that lacks variants present in the individual will lead to lower recall as fewer variants can be detected, and we want to capture this.</p>
+<h3 id="baseline-genotyper">Baseline genotyper</h3>
+<p>In the experiments we have included a “baseline” genotyper. This genotyper is implemented by running GLIMPSE with uniform genotype likelihoods as input, meaning that they are a result of GLIMPSE only using population priors to do genotyping and no information from sequenced reads.</p>
+<h2 id="code-availability">Code availability</h2>
+<p>KAGE2 is available at <a href="https://github.com/kage-genotyper/kage/" class="uri">https://github.com/kage-genotyper/kage/</a>. Instructions for how to reproduce the experiments provided here are available at <a href="https://github.com/bioinf-benchmarking/sv-genotyping/kage-experiments.md" class="uri">https://github.com/bioinf-benchmarking/sv-genotyping/kage-experiments.md</a></p>
+<div style="page-break-after: always;">
+
+</div>
+<h1 id="supplementary-material">Supplementary Material</h1>
+<h3 id="supplementary-figure-1">Supplementary Figure 1</h3>
+<p>Figure <a href="#fig:figure2">2</a> rerun with 5 random individuals (random seed in benchmarking pipeline ranging from 1-5).</p>
+<p><img src="https://raw.githubusercontent.com/bioinf-benchmarking/sv-genotyping/master/plots/supplementary_figure1.png" id="fig:supplementary_figure1" style="width:100.0%" /><br />
+</p>
+<h3 id="supplementary-figure-2">Supplementary Figure 2</h3>
+<p>Figure 2 rerun with reads from 1000 Genomes Project on the whole human genome for one individual.</p>
+<p><img src="https://raw.githubusercontent.com/bioinf-benchmarking/sv-genotyping/master/plots/supplementary_figure2.png" id="fig:supplementary_figure2" style="width:100.0%" /><br />
+</p>
+<h3 id="indexing-time">Indexing time</h3>
+<p>The following table shows the time spent creating indexes for the whole Draft Human Pangenome.</p>
+<table>
 <thead>
 <tr class="header">
-<th style="text-align: left;"><em>Bowling Scores</em></th>
-<th style="text-align: center;">Jane</th>
-<th style="text-align: center;">John</th>
-<th style="text-align: center;">Alice</th>
-<th style="text-align: center;">Bob</th>
+<th></th>
+<th>Time spent (h:m:s)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Game 1</td>
-<td style="text-align: center;">150</td>
-<td style="text-align: center;">187</td>
-<td style="text-align: center;">210</td>
-<td style="text-align: center;">105</td>
+<td>KAGE</td>
+<td>23:22:48</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Game 2</td>
-<td style="text-align: center;">98</td>
-<td style="text-align: center;">202</td>
-<td style="text-align: center;">197</td>
-<td style="text-align: center;">102</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Game 3</td>
-<td style="text-align: center;">123</td>
-<td style="text-align: center;">180</td>
-<td style="text-align: center;">238</td>
-<td style="text-align: center;">134</td>
+<td>PanGenie</td>
+<td>2:17:49</td>
 </tr>
 </tbody>
 </table>
-</div>
-<div id="tbl:constant-digits" class="tablenos">
-<table id="tbl:constant-digits">
-<caption><span>Table 2:</span> A table too wide to fit within page.
-</caption>
-<colgroup>
-<col style="width: 5%" />
-<col style="width: 20%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 34%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;"></th>
-<th style="text-align: left;">Digits 1-33</th>
-<th style="text-align: left;">Digits 34-66</th>
-<th style="text-align: left;">Digits 67-99</th>
-<th style="text-align: left;">Ref.</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">pi</td>
-<td style="text-align: left;">3.14159265358979323846264338327950</td>
-<td style="text-align: left;">288419716939937510582097494459230</td>
-<td style="text-align: left;">781640628620899862803482534211706</td>
-<td style="text-align: left;"><a href="https://www.piday.org/million/"><code>piday.org</code></a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">e</td>
-<td style="text-align: left;">2.71828182845904523536028747135266</td>
-<td style="text-align: left;">249775724709369995957496696762772</td>
-<td style="text-align: left;">407663035354759457138217852516642</td>
-<td style="text-align: left;"><a href="https://apod.nasa.gov/htmltest/gifcity/e.2mil"><code>nasa.gov</code></a></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="tbl:18b46502-4f08-44bd-a431-f60d65c602e2" class="tablenos">
-<table id="tbl:">
-<caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
-</caption>
-<thead>
-<tr class="header">
-<th style="text-align: center;"></th>
-<th style="text-align: center;"><strong>Colors</strong> <!-- $colspan="2" --></th>
-<th style="text-align: center;"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><strong>Size</strong></td>
-<td style="text-align: center;"><strong>Text Color</strong></td>
-<td style="text-align: center;"><strong>Background Color</strong></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">big</td>
-<td style="text-align: center;">blue</td>
-<td style="text-align: center;">orange</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">small</td>
-<td style="text-align: center;">black</td>
-<td style="text-align: center;">white</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="equations">Equations</h2>
-<p>A LaTeX equation:</p>
-<p><span id="eq:regular-equation" class="eqnos"><span class="math display">\[\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}\]</span><span class="eqnos-number">(1)</span></span> </p>
-<p>An equation too long to fit within page:</p>
-<p><span id="eq:long-equation" class="eqnos"><span class="math display">\[x = a + b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9\]</span><span class="eqnos-number">(2)</span></span> </p>
-<h2 id="special">Special</h2>
-<p><i class="fas fa-exclamation-triangle"></i> <span class="semibold">WARNING</span> <em>The following features are only supported and intended for <code>.html</code> and <code>.pdf</code> exports.</em>
-<em>Journals are not likely to support them, and they may not display correctly when converted to other formats such as <code>.docx</code>.</em></p>
-<p><a href="https://manubot.org" class="button" title="Manubot Homepage">Link styled as a button</a></p>
-<p>Adding arbitrary HTML attributes to an element using Pandoc’s attribute syntax:</p>
-<div id="some_id_1" class="some_class" style="background: #ad1457; color: white; margin-left: 40px;" title="a paragraph of text" data-color="white" disabled="true">
-<p>Manubot Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot.
-Manubot Manubot.
-Manubot.</p>
-</div>
-<p>Adding arbitrary HTML attributes to an element with the Manubot <code>attributes</code> plugin (more flexible than Pandoc’s method in terms of which elements you can add attributes to):</p>
-<p>Manubot Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot.
-Manubot Manubot.
-Manubot.
-<!-- $id="element_id" class="some_class" $style="color: #ad1457; margin-left: 40px;" $disabled="true" $title="a paragraph of text" $data-color="red" --></p>
-<p>Available background colors for text, images, code, banners, etc:</p>
-<p><code class="white">white</code>
-<code class="lightgrey">lightgrey</code>
-<code class="grey">grey</code>
-<code class="darkgrey">darkgrey</code>
-<code class="black">black</code>
-<code class="lightred">lightred</code>
-<code class="lightyellow">lightyellow</code>
-<code class="lightgreen">lightgreen</code>
-<code class="lightblue">lightblue</code>
-<code class="lightpurple">lightpurple</code>
-<code class="red">red</code>
-<code class="orange">orange</code>
-<code class="yellow">yellow</code>
-<code class="green">green</code>
-<code class="blue">blue</code>
-<code class="purple">purple</code></p>
-<p>Using the <a href="https://fontawesome.com/">Font Awesome</a> icon set:</p>
-<!-- include the Font Awesome library, per: https://fontawesome.com/start -->
-<p><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"></p>
-<p><i class="fas fa-check"></i> <i class="fas fa-question"></i> <i class="fas fa-star"></i> <i class="fas fa-bell"></i> <i class="fas fa-times-circle"></i> <i class="fas fa-ellipsis-h"></i></p>
-<p><span class="banner lightgrey"><i class="fas fa-scroll fa-lg"></i> <strong>Light Grey Banner</strong><br>
-useful for <em>general information</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
-<p><span class="banner lightblue"><i class="fas fa-info-circle fa-lg"></i> <strong>Blue Banner</strong><br>
-useful for <em>important information</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
-<p><span class="banner lightred"><i class="fas fa-ban fa-lg"></i> <strong>Light Red Banner</strong><br>
-useful for <em>warnings</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
-<div id="ref-IhliSZDo" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Sci-Hub provides access to nearly all scholarly literature</strong> <div class="csl-block">Daniel S Himmelstein, Ariel Rodriguez Romero, Jacob G Levernier, Thomas Anthony Munro, Stephen Reid McLaughlin, Bastian Greshake Tzovaras, Casey S Greene</div> <em>eLife</em> (2018-03-01) <a href="https://doi.org/ckcj">https://doi.org/ckcj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.7554/elife.32822">10.7554/elife.32822</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29424689">29424689</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5832410">PMC5832410</a></div></div>
+<div id="ref-7mzK8m8A" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Transient structural variations have strong effects on quantitative traits and reproductive isolation in fission yeast</strong> <div class="csl-block">Daniel C Jeffares, Clemency Jolly, Mimoza Hoti, Doug Speed, Liam Shaw, Charalampos Rallis, Francois Balloux, Christophe Dessimoz, Jürg Bähler, Fritz J Sedlazeck</div> <em>Nature Communications</em> (2017-01-24) <a href="https://doi.org/f9m8d3">https://doi.org/f9m8d3</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/ncomms14061">10.1038/ncomms14061</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28117401">28117401</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5286201">PMC5286201</a></div></div>
 </div>
-<div id="ref-mSMVRkoc" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>Reproducibility of computational workflows is automated using continuous analysis</strong> <div class="csl-block">Brett K Beaulieu-Jones, Casey S Greene</div> <em>Nature biotechnology</em> (2017-04) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nbt.3780">10.1038/nbt.3780</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28288103">28288103</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790">PMC6103790</a></div></div>
+<div id="ref-YfgNV8TZ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>Long-Read Sequencing Emerging in Medical Genetics</strong> <div class="csl-block">Tuomo Mantere, Simone Kersten, Alexander Hoischen</div> <em>Frontiers in Genetics</em> (2019-05-07) <a href="https://doi.org/gnhp5p">https://doi.org/gnhp5p</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3389/fgene.2019.00426">10.3389/fgene.2019.00426</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31134132">31134132</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6514244">PMC6514244</a></div></div>
 </div>
-<div id="ref-126Wi5Us4" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>Bitcoin for the biological literature.</strong> <div class="csl-block">Douglas Heaven</div> <em>Nature</em> (2019-02) <a href="https://www.ncbi.nlm.nih.gov/pubmed/30718888">https://www.ncbi.nlm.nih.gov/pubmed/30718888</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/d41586-019-00447-9">10.1038/d41586-019-00447-9</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30718888">30718888</a></div></div>
+<div id="ref-7BsVHkd5" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>Tandem repeats mediating genetic plasticity in health and disease</strong> <div class="csl-block">Anthony J Hannan</div> <em>Nature Reviews Genetics</em> (2018-02-05) <a href="https://doi.org/gdd69k">https://doi.org/gdd69k</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nrg.2017.115">10.1038/nrg.2017.115</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29398703">29398703</a></div></div>
 </div>
-<div id="ref-QhC8yJ7V" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Plan S: Accelerating the transition to full and immediate Open Access to scientific publications</strong> <div class="csl-block">cOAlition S</div> (2018-09-04) <a href="https://www.wikidata.org/wiki/Q56458321">https://www.wikidata.org/wiki/Q56458321</a></div>
+<div id="ref-ZROUgx5p" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Structural variant calling: the long and the short of it</strong> <div class="csl-block">Medhat Mahmoud, Nastassia Gobet, Diana Ivette Cruz-Dávalos, Ninon Mounier, Christophe Dessimoz, Fritz J Sedlazeck</div> <em>Genome Biology</em> (2019-11-20) <a href="https://doi.org/ggdk3b">https://doi.org/ggdk3b</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s13059-019-1828-7">10.1186/s13059-019-1828-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31747936">31747936</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6868818">PMC6868818</a></div></div>
 </div>
-<div id="ref-zBPP9YKu" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>Open access</strong> <div class="csl-block">Peter Suber</div> <em>MIT Press</em> (2012) <div class="csl-block">ISBN: 9780262517638</div></div>
+<div id="ref-NTaj3OT2" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>Towards population-scale long-read sequencing</strong> <div class="csl-block">Wouter De Coster, Matthias H Weissensteiner, Fritz J Sedlazeck</div> <em>Nature Reviews Genetics</em> (2021-05-28) <a href="https://doi.org/gj8s78">https://doi.org/gj8s78</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41576-021-00367-3">10.1038/s41576-021-00367-3</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/34050336">34050336</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8161719">PMC8161719</a></div></div>
 </div>
-<div id="ref-1GGGHdsew" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>Manubot</em> (2020-05-25) <a href="https://greenelab.github.io/meta-review/">https://greenelab.github.io/meta-review/</a></div>
+<div id="ref-13ZFMJxdq" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>Accurate detection of complex structural variations using single-molecule sequencing</strong> <div class="csl-block">Fritz J Sedlazeck, Philipp Rescheneder, Moritz Smolka, Han Fang, Maria Nattestad, Arndt von Haeseler, Michael C Schatz</div> <em>Nature Methods</em> (2018-04-30) <a href="https://doi.org/gddh45">https://doi.org/gddh45</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41592-018-0001-7">10.1038/s41592-018-0001-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29713083">29713083</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5990442">PMC5990442</a></div></div>
 </div>
-<div id="ref-PZMP42Ak" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>Opportunities and obstacles for deep learning in biology and medicine</strong> <div class="csl-block">Travers Ching, Daniel S Himmelstein, Brett K Beaulieu-Jones, Alexandr A Kalinin, Brian T Do, Gregory P Way, Enrico Ferrero, Paul-Michael Agapow, Michael Zietz, Michael M Hoffman, … Casey S Greene</div> <em>Journal of The Royal Society Interface</em> (2018-04) <a href="https://doi.org/gddkhn">https://doi.org/gddkhn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1098/rsif.2017.0387">10.1098/rsif.2017.0387</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29618526">29618526</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5938574">PMC5938574</a></div></div>
+<div id="ref-rs7e40wC" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>Discovery and genotyping of structural variation from long-read haploid genome sequence data</strong> <div class="csl-block">John Huddleston, Mark JP Chaisson, Karyn Meltz Steinberg, Wes Warren, Kendra Hoekzema, David Gordon, Tina A Graves-Lindsay, Katherine M Munson, Zev N Kronenberg, Laura Vives, … Evan E Eichler</div> <em>Genome Research</em> (2016-11-28) <a href="https://doi.org/f9x79h">https://doi.org/f9x79h</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/gr.214007.116">10.1101/gr.214007.116</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27895111">27895111</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5411763">PMC5411763</a></div></div>
 </div>
-<div id="ref-YuJbg3zO" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>PLOS Computational Biology</em> (2019-06-24) <a href="https://doi.org/c7np">https://doi.org/c7np</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31233491">31233491</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653">PMC6611653</a></div></div>
+<div id="ref-CqG8RQye" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>A draft human pangenome reference</strong> <div class="csl-block">Wen-Wei Liao, Mobin Asri, Jana Ebler, Daniel Doerr, Marina Haukness, Glenn Hickey, Shuangjia Lu, Julian K Lucas, Jean Monlong, Haley J Abel, … Benedict Paten</div> <em>Nature</em> (2023-05-10) <a href="https://doi.org/gr8b6s">https://doi.org/gr8b6s</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41586-023-05896-x">10.1038/s41586-023-05896-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37165242">37165242</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10172123">PMC10172123</a></div></div>
+</div>
+<div id="ref-xTxiitR" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>Pangenome-based genome inference allows efficient and accurate genotyping across a wide spectrum of variant classes</strong> <div class="csl-block">Jana Ebler, Peter Ebert, Wayne E Clarke, Tobias Rausch, Peter A Audano, Torsten Houwaart, Yafei Mao, Jan O Korbel, Evan E Eichler, Michael C Zody, … Tobias Marschall</div> <em>Nature Genetics</em> (2022-04) <a href="https://doi.org/grp6v6">https://doi.org/grp6v6</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41588-022-01043-w">10.1038/s41588-022-01043-w</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/35410384">35410384</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9005351">PMC9005351</a></div></div>
+</div>
+<div id="ref-m03AmiSF" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>Pangenome Graphs</strong> <div class="csl-block">Jordan M Eizenga, Adam M Novak, Jonas A Sibbesen, Simon Heumos, Ali Ghaffaari, Glenn Hickey, Xian Chang, Josiah D Seaman, Robin Rounthwaite, Jana Ebler, … Erik Garrison</div> <em>Annual Review of Genomics and Human Genetics</em> (2020-08-31) <a href="https://doi.org/ghtrkn">https://doi.org/ghtrkn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1146/annurev-genom-120219-080406">10.1146/annurev-genom-120219-080406</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32453966">32453966</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8006571">PMC8006571</a></div></div>
+</div>
+<div id="ref-10jxt15v0" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline"><strong>Variation graph toolkit improves read mapping by representing genetic variation in the reference</strong> <div class="csl-block">Erik Garrison, Jouni Sirén, Adam M Novak, Glenn Hickey, Jordan M Eizenga, Eric T Dawson, William Jones, Shilpa Garg, Charles Markello, Michael F Lin, … Richard Durbin</div> <em>Nature Biotechnology</em> (2018-10) <a href="https://doi.org/gd2zqs">https://doi.org/gd2zqs</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nbt.4227">10.1038/nbt.4227</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30125266">30125266</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6126949">PMC6126949</a></div></div>
+</div>
+<div id="ref-WCEeLZ0k" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>Pangenomics enables genotyping of known structural variants in 5202 diverse genomes</strong> <div class="csl-block">Jouni Sirén, Jean Monlong, Xian Chang, Adam M Novak, Jordan M Eizenga, Charles Markello, Jonas A Sibbesen, Glenn Hickey, Pi-Chuan Chang, Andrew Carroll, … Benedict Paten</div> <em>Science</em> (2021-12-17) <a href="https://doi.org/gns2wr">https://doi.org/gns2wr</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1126/science.abg8871">10.1126/science.abg8871</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/34914532">34914532</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9365333">PMC9365333</a></div></div>
+</div>
+<div id="ref-cO2lshLU" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>Removing reference bias and improving indel calling in ancient DNA data analysis by mapping to a sequence variation graph</strong> <div class="csl-block">Rui Martiniano, Erik Garrison, Eppie R Jones, Andrea Manica, Richard Durbin</div> <em>Genome Biology</em> (2020-09-17) <a href="https://doi.org/ghh78x">https://doi.org/ghh78x</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s13059-020-02160-7">10.1186/s13059-020-02160-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32943086">32943086</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7499850">PMC7499850</a></div></div>
+</div>
+<div id="ref-kWWwizJT" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>KAGE: fast alignment-free graph-based genotyping of SNPs and short indels</strong> <div class="csl-block">Ivar Grytten, Knut Dagestad Rand, Geir Kjetil Sandve</div> <em>Genome Biology</em> (2022-10-04) <a href="https://doi.org/grpzvf">https://doi.org/grpzvf</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s13059-022-02771-2">10.1186/s13059-022-02771-2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36195962">36195962</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9531401">PMC9531401</a></div></div>
+</div>
+<div id="ref-ohTIiqfV" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>Graphtyper enables population-scale genotyping using pangenome graphs</strong> <div class="csl-block">Hannes P Eggertsson, Hakon Jonsson, Snaedis Kristmundsdottir, Eirikur Hjartarson, Birte Kehr, Gisli Masson, Florian Zink, Kristjan E Hjorleifsson, Aslaug Jonasdottir, Adalbjorg Jonasdottir, … Bjarni V Halldorsson</div> <em>Nature Genetics</em> (2017-09-25) <a href="https://doi.org/gbx7v6">https://doi.org/gbx7v6</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/ng.3964">10.1038/ng.3964</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28945251">28945251</a></div></div>
+</div>
+<div id="ref-MpmJz9S5" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>MALVA: Genotyping by Mapping-free ALlele Detection of Known VAriants</strong> <div class="csl-block">Luca Denti, Marco Previtali, Giulia Bernardini, Alexander Schönhuth, Paola Bonizzoni</div> <em>iScience</em> (2019-08) <a href="https://doi.org/gmhw28">https://doi.org/gmhw28</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.isci.2019.07.011">10.1016/j.isci.2019.07.011</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31352182">31352182</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6664100">PMC6664100</a></div></div>
+</div>
+<div id="ref-lu1eqKl0" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>Efficient phasing and imputation of low-coverage sequencing data using large reference panels</strong> <div class="csl-block">Simone Rubinacci, Diogo M Ribeiro, Robin J Hofmeister, Olivier Delaneau</div> <em>Nature Genetics</em> (2021-01) <a href="https://doi.org/ghr8j9">https://doi.org/ghr8j9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41588-020-00756-0">10.1038/s41588-020-00756-0</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33414550">33414550</a></div></div>
+</div>
+<div id="ref-uFRC6FaZ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline"><strong>Truvari: refined structural variant comparison preserves allelic diversity</strong> <div class="csl-block">Adam C English, Vipin K Menon, Richard A Gibbs, Ginger A Metcalf, Fritz J Sedlazeck</div> <em>Genome Biology</em> (2022-12-27) <a href="https://doi.org/gs6zss">https://doi.org/gs6zss</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s13059-022-02840-6">10.1186/s13059-022-02840-6</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36575487">36575487</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9793516">PMC9793516</a></div></div>
+</div>
+<div id="ref-RSEHWg4W" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">19. </div><div class="csl-right-inline"><strong>Benchmarking challenging small variants with linked and long reads</strong> <div class="csl-block">Justin Wagner, Nathan D Olson, Lindsay Harris, Ziad Khan, Jesse Farek, Medhat Mahmoud, Ana Stankovic, Vladimir Kovacevic, Byunggil Yoo, Neil Miller, … Justin M Zook</div> <em>Cell Genomics</em> (2022-05) <a href="https://doi.org/gst79q">https://doi.org/gst79q</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.xgen.2022.100128">10.1016/j.xgen.2022.100128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36452119">36452119</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9706577">PMC9706577</a></div></div>
+</div>
+<div id="ref-i8VR6l5D" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">20. </div><div class="csl-right-inline"><strong>BioNumPy: Fast and easy analysis of biological data with Python</strong> <div class="csl-block">Knut Rand, Ivar Grytten, Milena Pavlovic, Chakravarthi Kanduri, Geir Kjetil Sandve</div> <em>Cold Spring Harbor Laboratory</em> (2022-12-22) <a href="https://doi.org/grp3k6">https://doi.org/grp3k6</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2022.12.21.521373">10.1101/2022.12.21.521373</a></div></div>
+</div>
+<div id="ref-1LexfAxj" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">21. </div><div class="csl-right-inline"><strong>Array programming with NumPy</strong> <div class="csl-block">Charles R Harris, KJarrod Millman, Stéfan J van der Walt, Ralf Gommers, Pauli Virtanen, David Cournapeau, Eric Wieser, Julian Taylor, Sebastian Berg, Nathaniel J Smith, … Travis E Oliphant</div> <em>Nature</em> (2020-09-16) <a href="https://doi.org/ghbzf2">https://doi.org/ghbzf2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41586-020-2649-2">10.1038/s41586-020-2649-2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32939066">32939066</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7759461">PMC7759461</a></div></div>
+</div>
+<div id="ref-hqVwMwQf" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">22. </div><div class="csl-right-inline"><strong>Genotype Imputation</strong> <div class="csl-block">Yun Li, Cristen Willer, Serena Sanna, Gonçalo Abecasis</div> <em>Annual Review of Genomics and Human Genetics</em> (2009-09-01) <a href="https://doi.org/dvb34r">https://doi.org/dvb34r</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1146/annurev.genom.9.081307.164242">10.1146/annurev.genom.9.081307.164242</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/19715440">19715440</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2925172">PMC2925172</a></div></div>
+</div>
+<div id="ref-11PJIeJyi" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">23. </div><div class="csl-right-inline"><strong>A global reference for human genetic variation</strong><div class="csl-block">, Adam Auton, Gonçalo R Abecasis, David M Altshuler (Co-Chair), Richard M Durbin (Co-Chair), Gonçalo R Abecasis, David R Bentley, Aravinda Chakravarti, Andrew G Clark, Peter Donnelly, … </div> <em>Nature</em> (2015-09-30) <a href="https://doi.org/73d">https://doi.org/73d</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nature15393">10.1038/nature15393</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26432245">26432245</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4750478">PMC4750478</a></div></div>
+</div>
+<div id="ref-14Uxmwbxm" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">24. </div><div class="csl-right-inline"><strong>Accurate genotyping across variant classes and lengths using variant graphs</strong> <div class="csl-block">Jonas Andreas Sibbesen, Lasse Maretty, Anders Krogh</div> <em>Nature Genetics</em> (2018-06-18) <a href="https://doi.org/gdndnz">https://doi.org/gdndnz</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41588-018-0145-5">10.1038/s41588-018-0145-5</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29915429">29915429</a></div></div>
+</div>
+<div id="ref-g7Kb78ap" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>Best practices for benchmarking germline small-variant calls in human genomes</strong> <div class="csl-block">Peter Krusche, Len Trigg, Paul C Boutros, Christopher E Mason, Francisco M De La Vega, Benjamin L Moore, Mar Gonzalez-Porta, Michael A Eberle, Zivana Tezak, … Justin M Zook</div> <em>Nature Biotechnology</em> (2019-03-11) <a href="https://doi.org/gfw26t">https://doi.org/gfw26t</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41587-019-0054-x">10.1038/s41587-019-0054-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30858580">30858580</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6699627">PMC6699627</a></div></div>
 </div>
 </div>
 <!-- default theme -->
