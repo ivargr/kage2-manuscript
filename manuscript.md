@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-12-19" />
   <meta name="citation_publication_date" content="2023-12-19" />
   <meta property="article:published_time" content="2023-12-19" />
-  <meta name="dc.modified" content="2023-12-19T11:58:21+00:00" />
-  <meta property="article:modified_time" content="2023-12-19T11:58:21+00:00" />
+  <meta name="dc.modified" content="2023-12-19T13:20:22+00:00" />
+  <meta property="article:modified_time" content="2023-12-19T13:20:22+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://ivargr.github.io/kage2-manuscript/" />
   <meta name="citation_pdf_url" content="https://ivargr.github.io/kage2-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://ivargr.github.io/kage2-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://ivargr.github.io/kage2-manuscript/v/f9046baaa1a0ef49f19015d10a1ba80b28090393/" />
-  <meta name="manubot_html_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/f9046baaa1a0ef49f19015d10a1ba80b28090393/" />
-  <meta name="manubot_pdf_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/f9046baaa1a0ef49f19015d10a1ba80b28090393/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://ivargr.github.io/kage2-manuscript/v/1828e9fc749b27e4f2a8323b9de15174881cddae/" />
+  <meta name="manubot_html_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/1828e9fc749b27e4f2a8323b9de15174881cddae/" />
+  <meta name="manubot_pdf_url_versioned" content="https://ivargr.github.io/kage2-manuscript/v/1828e9fc749b27e4f2a8323b9de15174881cddae/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -115,7 +115,7 @@ Figure {@fig:figure1}b shows the runtime of the genotypers as a function of pang
 
 
 #### KAGE performs well on different variant types/regions
-To investigate the observed performance in more detail, Figure {@fig:figure2} shows the genotyping accuracy stratified by type of genomic regions and type of variant (using regions defined by GIAB [@giab]). KAGE is generally the best-performing genotyper across all variant-types and regions.(
+To investigate the observed performance in more detail, Figure {@fig:figure2} shows the genotyping accuracy stratified by type of genomic regions and type of variant (using regions defined by GIAB [@giab]). KAGE2 is generally the best-performing genotyper across all variant-types and regions.
 
 ![Accuracy for deletions and insertions in various types of genomic regions.](https://raw.githubusercontent.com/bioinf-benchmarking/sv-genotyping/master/plots/figure2.png){#fig:figure2  width="100%"}
 
@@ -178,6 +178,42 @@ KAGE2 is available at <https://github.com/kage-genotyper/kage/>. Instructions fo
 
 
 
+[@svcalling_review]: doi:10.1186/s13059-019-1828-7
+[@sv_yeast]: doi:10.1038/ncomms14061
+[@sv_medical]: doi:10.3389/fgene.2019.00426
+[@long_read_sequencing_review]: doi:10.1038/s41576-021-00367-3
+[@manta]: doi:10.1093/bioinformatics/btv710
+[@delly]: doi:10.1093/bioinformatics/bts378
+[@lumpy]: doi:10.1186/gb-2014-15-6-r84
+[@sniffles]: doi:10.1038/s41592-018-0001-7 
+[@smrtsv]: doi:10.1101/gr.214007.116
+[@hprc]: doi:10.1038/s41586-023-05896-x
+[@pangenie]: doi:10.1038/s41588-022-01043-w
+[@pangenome_review]: doi:10.1146/annurev-genom-120219-080406
+[@giraffe]: doi:10.1126/science.abg8871
+[@kage]: doi:10.1186/s13059-022-02771-2
+[@reference_bias]: doi:10.1186/s13059-020-02160-7
+[@malva]: doi:10.1016/j.isci.2019.07.011
+[@glimpse]: doi:10.1038/s41588-020-00756-0
+[@truvari]: doi:10.1186/s13059-022-02840-6
+[@snakemake]: doi:10.1093/bioinformatics/bts480
+[@thousand_genomes]: doi:10.1038/nature15393
+[@bionumpy]: doi:10.1101/2022.12.21.521373
+[@numpy]: doi:10.1038/s41586-020-2649-2
+[@vg]: doi:10.1038/nbt.4227
+[@imputation_review]: doi:10.1146/annurev.genom.9.081307.164242
+[@bayestyper]: doi:10.1038/s41588-018-0145-5
+[@best_practices_benchmarking]: doi:10.1038/s41587-019-0054-x
+[@tandem_repeats]: doi:10.1038/nrg.2017.115
+[@graphtyper]: doi:10.1038/ng.3964
+[@giab]: doi:10.1016/j.xgen.2022.100128
+[@tomato]: doi:10.1038/s41586-022-04808-9
+
+
+
+
+
+
 
 <div style="page-break-after: always;"></div>
 
@@ -209,37 +245,6 @@ The following table shows the time spent creating indexes for the whole Draft Hu
 | KAGE     | 23:22:48           |
 | PanGenie | 2:17:49            |
 
-
-[@svcalling_review]: doi:10.1186/s13059-019-1828-7
-[@sv_yeast]: doi:10.1038/ncomms14061
-[@sv_medical]: doi:10.3389/fgene.2019.00426
-[@long_read_sequencing_review]: doi:10.1038/s41576-021-00367-3
-[@manta]: doi:10.1093/bioinformatics/btv710
-[@delly]: doi:10.1093/bioinformatics/bts378
-[@lumpy]: doi:10.1186/gb-2014-15-6-r84
-[@sniffles]: doi:10.1038/s41592-018-0001-7 
-[@smrtsv]: doi:10.1101/gr.214007.116
-[@hprc]: doi:10.1038/s41586-023-05896-x
-[@pangenie]: doi:10.1038/s41588-022-01043-w
-[@pangenome_review]: doi:10.1146/annurev-genom-120219-080406
-[@giraffe]: doi:10.1126/science.abg8871
-[@kage]: doi:10.1186/s13059-022-02771-2
-[@reference_bias]: doi:10.1186/s13059-020-02160-7
-[@malva]: doi:10.1016/j.isci.2019.07.011
-[@glimpse]: doi:10.1038/s41588-020-00756-0
-[@truvari]: doi:10.1186/s13059-022-02840-6
-[@snakemake]: doi:10.1093/bioinformatics/bts480
-[@thousand_genomes]: doi:10.1038/nature15393
-[@bionumpy]: doi:10.1101/2022.12.21.521373
-[@numpy]: doi:10.1038/s41586-020-2649-2
-[@vg]: doi:10.1038/nbt.4227
-[@imputation_review]: doi:10.1146/annurev.genom.9.081307.164242
-[@bayestyper]: doi:10.1038/s41588-018-0145-5
-[@best_practices_benchmarking]: doi:10.1038/s41587-019-0054-x
-[@tandem_repeats]: doi:10.1038/nrg.2017.115
-[@graphtyper]: doi:10.1038/ng.3964
-[@giab]: doi:10.1016/j.xgen.2022.100128
-[@tomato]: doi:10.1038/s41586-022-04808-9
 
 
 ## References {.page_break_before}
