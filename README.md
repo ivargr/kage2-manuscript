@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/ivargr/kage2-manuscript/tree/gh-pages) branch hosts the contents of this directory at <https://ivargr.github.io/kage2-manuscript/>.
-The permalink for this webpage version is <https://ivargr.github.io/kage2-manuscript/v/f9046baaa1a0ef49f19015d10a1ba80b28090393/>.
+The permalink for this webpage version is <https://ivargr.github.io/kage2-manuscript/v/1828e9fc749b27e4f2a8323b9de15174881cddae/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://ivargr.github.io/kage2-manuscript/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`f9046baaa1a0ef49f19015d10a1ba80b28090393`](https://github.com/ivargr/kage2-manuscript/commit/f9046baaa1a0ef49f19015d10a1ba80b28090393).
+[`1828e9fc749b27e4f2a8323b9de15174881cddae`](https://github.com/ivargr/kage2-manuscript/commit/1828e9fc749b27e4f2a8323b9de15174881cddae).
