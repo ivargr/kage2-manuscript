@@ -1,6 +1,6 @@
 Bayestyper
 Bayestyper’s
-benchmarking
+Benchmarking
 Bioinformatics
 BioNumPy
 coverages
@@ -25,7 +25,7 @@ Ivar
 KAGE
 Kjetil
 kmer
-kmers
+Kmers
 Knut
 malva
 mimicks
@@ -34,7 +34,7 @@ multiallelic
 novo
 NumPy
 pangenie
-Pangenome
+pangenome
 pangenomes
 pangenomic
 preselected

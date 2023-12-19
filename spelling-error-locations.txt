@@ -205,7 +205,6 @@ content/01.abstract.md:50:pangenomes
 content/01.abstract.md:50:pangenomes
 content/01.abstract.md:56:bionumpy
 content/01.abstract.md:56:BioNumPy
-content/01.abstract.md:56:genotype
 content/01.abstract.md:56:genotyping
 content/01.abstract.md:56:KAGE
 content/01.abstract.md:56:KAGE
@@ -324,6 +323,7 @@ content/01.abstract.md:87:genotyping
 content/01.abstract.md:87:kage
 content/01.abstract.md:87:kage
 content/01.abstract.md:87:kage
+content/01.abstract.md:87:pangenome
 content/01.abstract.md:87:sv
 content/01.abstract.md:102:benchmarking
 content/01.abstract.md:105:benchmarking
